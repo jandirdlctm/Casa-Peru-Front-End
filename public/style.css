@@ -1,0 +1,49 @@
+:root{
+    --red: red;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+h1{
+  font-family: 'Oswald', sans-serif;
+}
+
+*::selection{
+    color: #fff;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: white;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--red);
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+}
