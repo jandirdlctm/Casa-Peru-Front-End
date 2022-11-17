@@ -1,5 +1,5 @@
 <template lang="html">
-  <section>
+  <section class="menu-page">
     <div class="container-menu">
       <div class="menu-heading">
         <h4><span></span> our menu</h4>
@@ -631,6 +631,16 @@ export default {
     }
   }
 
+  @media (max-width: 360px){
+    
+
+    .menu-item{
+      display: block;
+      margin: -11px;
+      margin-bottom: 18px;
+    }
+
+  }
 
 
 </style>

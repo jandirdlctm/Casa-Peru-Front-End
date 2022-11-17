@@ -141,13 +141,25 @@ export default {
   }
   .home-page .hero-image img{
     width: 100%;
+    
   }
   }
 
   @media (max-width: 754px){
   .home-page::before,
   .home-page::after{
-    display: none;
+    /* display: none; */
+    content: '';
+    position: absolute;
+    top: 80px;
+    right: -96px;
+    background: black;
+    border-radius: 48px;
+    transform: rotate(-45deg);
+    height: 640px;
+    width: 1120px;
+    z-index: -2;
+    animation: animate 1s linear 1;
   }
   .home-page .home-content{
     text-align: center;
@@ -166,9 +178,10 @@ export default {
     padding: .7rem 4rem;
     border-radius: 5rem;
     margin-top: 2rem;
-    background: black;
+    background: lightgray;
     cursor: pointer;
     border: .2rem solid white;
+    color: black;
   }
   .order-btn:hover{
     background: white;

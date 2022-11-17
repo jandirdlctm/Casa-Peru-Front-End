@@ -1,15 +1,16 @@
 <template>
-  <div class="house-container">
+  <!-- <div class="house-container"> -->
     <section class="house-specialties" id="house-specialties">
       <h1 class="title">House <span>Specialties</span></h1>
       <div class="wrapper-box">
         <div v-for="food in houseSpecials" v-bind:key="food" class="food-box">
-          <img :src="food.image">
+            <img :src="food.image">
+            <!-- <div class="r1"></div> -->
           <h3>{{food.title}}</h3>
         </div>
       </div>
     </section>
-  </div>
+  <!-- </div> -->
 
 </template>
 
@@ -70,7 +71,14 @@ export default {
   }
 
   .house-specialties{
-    background-color: red;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
   }
 
   .title{
@@ -94,6 +102,21 @@ export default {
     overflow: hidden;
     position: relative;
   }
+  .house-specialties::before,
+  .house-specialties::after{
+    content: '';
+    position: absolute;
+    top: 80px;
+    right: -96px;
+    background: black;
+    border-radius: 48px;
+    transform: rotate(-45deg);
+    height: 640px;
+    width: 1120px;
+    z-index: -2;
+    animation: animate 1s linear 1;
+  }
+  
   img{
     height: 100%;
     width: 100%;
