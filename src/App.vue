@@ -70,13 +70,18 @@
         <p>Saturday     11:00 AM - 9:30 PM</p>
         <p>Sunday       11:00 AM - 6:30 PM</p> -->
         <h3>Hours</h3>
-        <table>
-          <tr><th>Sunday</th><td>Closed</td></tr>
-          <tr><th>Monday</th><td>9am - 5pm</td></tr>
-          <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
-          <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
-          <tr><th>Thursday</th><td>9am - 5pm</td></tr>
-        </table>
+        <div class="hrs-of-operation-wrapper">
+          <table>
+            <tr><th>Monday</th><td>11am - 8pm</td></tr>
+            <tr><th>Tuesday</th><td>CLOSED</td></tr>
+            <tr><th>Wednesday</th><td>11am - 8pm</td></tr>
+            <tr><th>Thursday</th><td>11am - 8pm</td></tr>
+            <tr><th>Friday</th><td>11am - 9pm</td></tr>
+            <tr><th>Saturday</th><td>11am - 9:30pm</td></tr>
+            <tr><th>Sunday</th><td>11am - 6:30pm</td></tr>
+          </table>
+        </div>
+        
       </div>
 
       <div class="wrapper">
@@ -265,13 +270,15 @@ header #menu-bar{
 
 table {
   border-collapse: separate;
-  border-spacing: 50px 0;
+  border-spacing: 0px 17px;
   font-size: 1.7rem;
-  color: #eee;
+  text-align: left;
+  color: white;
 }
 
 td {
-  padding: 10px 0;
+  /* padding: 10px 0; */
+  padding-left: 60px;
 }
 
 /* table{
@@ -303,6 +310,14 @@ th{
   color: white;
 }
 
+@media (max-width: 360px){
+    
+    td {
+  /* padding: 10px 0; */
+  padding-left: 40px;
+}
+
+  }
 
 
 
