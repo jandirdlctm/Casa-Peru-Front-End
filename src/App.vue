@@ -61,6 +61,25 @@
       </div>
 
       <div class="wrapper">
+        <!-- <h3>Hours</h3>
+        <p>Monday       11:00 AM - 8:00 PM</p>
+        <p>Tuesday      CLOSED</p>
+        <p>Wednesday    11:00 AM - 8:00 PM</p>
+        <p>Thursday     11:00 AM - 8:00 PM</p>
+        <p>Friday       11:00 AM - 9:00 PM</p>
+        <p>Saturday     11:00 AM - 9:30 PM</p>
+        <p>Sunday       11:00 AM - 6:30 PM</p> -->
+        <h3>Hours</h3>
+        <table>
+          <tr><th>Sunday</th><td>Closed</td></tr>
+          <tr><th>Monday</th><td>9am - 5pm</td></tr>
+          <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
+          <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
+          <tr><th>Thursday</th><td>9am - 5pm</td></tr>
+        </table>
+      </div>
+
+      <div class="wrapper">
         <h3>Social Media</h3>
         <a href="https://www.facebook.com/pg/casaperurestaurant14/about/?ref=page_internal" target="_blank">Facebook</a>
       </div>
@@ -242,8 +261,34 @@ header #menu-bar{
 
 .credit a{
   color: red;
-
 }
+
+table {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+  font-size: 1.7rem;
+  color: #eee;
+}
+
+td {
+  padding: 10px 0;
+}
+
+/* table{
+  font-size: 1.7rem;
+  color: #eee;
+  /* padding: 1rem 0; */
+/* }  */
+
+/* td{
+  text-align: right;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+th{
+  text-align: left;
+} */
 
 /* HAMBURGER */
 .bm-burger-bars{
