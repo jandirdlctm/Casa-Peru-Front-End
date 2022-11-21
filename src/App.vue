@@ -19,7 +19,7 @@
         <html:button v-on:click="navButtonClicked" id="menu-bar" class="fas fa-bars" type="button" name="button"></html:button>
       </div> -->
 
-      <Slide right>
+      <Slide right :closeOnNavigation="true">
 
           <a class="nav-link"><router-link to="/">Home</router-link></a>
           <a class="nav-link"><router-link to="/house-specialties">House Specialties</router-link></a>
