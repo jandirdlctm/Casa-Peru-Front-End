@@ -1,17 +1,13 @@
 <template>
-  <!-- <div class="house-container"> -->
     <section class="house-specialties" id="house-specialties">
       <h1 class="title">House <span>Specialties</span></h1>
       <div class="wrapper-box">
         <div v-for="food in houseSpecials" v-bind:key="food" class="food-box">
             <img :src="food.image">
-            <!-- <div class="r1"></div> -->
           <h3>{{food.title}}</h3>
         </div>
       </div>
     </section>
-  <!-- </div> -->
-
 </template>
 
 <script>
@@ -69,9 +65,7 @@ export default {
   .house-container{
     margin-top: 0px;
   }
-
   .house-specialties{
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +96,7 @@ export default {
     overflow: hidden;
     position: relative;
   }
+
   .house-specialties::before,
   .house-specialties::after{
     content: '';
@@ -121,8 +116,8 @@ export default {
     height: 100%;
     width: 100%;
     object-fit: cover;
-
   }
+
   .food-box h3{
     position: absolute;
     top: 100%;
@@ -134,13 +129,13 @@ export default {
     opacity: 0;
   }
 
-   .food-box:hover h3{
+  .food-box:hover h3{
     top: 50%;
     opacity: 1;
     transition-delay: .2s;
   }
 
-   .food-box::before{
+  .food-box::before{
     content: '';
     position: absolute;
     top: -100%;
@@ -150,7 +145,7 @@ export default {
     background: rgba(0,0,0,.7);
     transition: 2s linear;
   }
-   .food-box:hover::before{
+  .food-box:hover::before{
     top: 0;
   }
 
@@ -158,6 +153,7 @@ export default {
     .title{
       margin-top: 1rem;
     }
+
   }
 
 </style>

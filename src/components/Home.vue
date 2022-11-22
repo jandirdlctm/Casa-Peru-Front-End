@@ -55,6 +55,7 @@ export default {
     padding-top: 136px;
     background: lightgray;
   }
+
   .home-page{
     display: flex;
     align-items: center;
@@ -64,24 +65,30 @@ export default {
     z-index: 0;
     overflow: hidden;
   }
+
   .home-page .hero-image{
     flex: 1 1 624px;
   }
+
   .home-page .hero-image img{
     width: 120%;
   }
+
   .home-page .home-content{
     flex: 1 1 624px;
   }
+
   .home-page .home-content h3{
     color: #333;
     font-size: 64px;
   }
+
   .home-page .home-content p{
     color: #666;
     font-size: 16px;
     padding: 16px 0;
   }
+
   .order-btn{
     font-size: 27.2px;
     padding: 11.2px 64px;
@@ -92,10 +99,12 @@ export default {
     border: 3.2px solid white;
     color: white;
   }
+
   .order-btn:hover{
     background: black;
     color: white;
   }
+
   .home-page::before,
   .home-page::after{
     content: '';
@@ -115,78 +124,84 @@ export default {
     section{
       background: red;
     }
+
     .home-page .home-content h3{
       margin-top: 5rem;
       color: white;
       font-size: 4rem;
-  }
+    }
+
     .home-page .home-content p{
       color: #FFFFFF;
       font-size: 1rem;
       padding: 1rem 0;
-  }
-  .order-btn{
-    font-size: 1.7rem;
-    padding: .7rem 4rem;
-    border-radius: 5rem;
-    margin-top: 1rem;
-    background: none;
-    cursor: pointer;
-    border: .2rem solid white;
-    color: white;
-  }
-  .order-btn:hover{
-    background: white;
-    color: red;
-  }
-  .home-page .hero-image img{
-    width: 100%;
+    }
+
+    .order-btn{
+      font-size: 1.7rem;
+      padding: .7rem 4rem;
+      border-radius: 5rem;
+      margin-top: 1rem;
+      background: none;
+      cursor: pointer;
+      border: .2rem solid white;
+      color: white;
+    }
+
+    .order-btn:hover{
+      background: white;
+      color: red;
+    }
+
+    .home-page .hero-image img{
+      width: 100%;
+    }
     
-  }
   }
 
   @media (max-width: 754px){
-  .home-page::before,
-  .home-page::after{
-    /* display: none; */
-    content: '';
-    position: absolute;
-    top: 80px;
-    right: -96px;
-    background: black;
-    border-radius: 48px;
-    transform: rotate(-45deg);
-    height: 640px;
-    width: 1120px;
-    z-index: -2;
-    animation: animate 1s linear 1;
-  }
-  .home-page .home-content{
-    text-align: center;
-  }
+    .home-page::before,
+    .home-page::after{
+      content: '';
+      position: absolute;
+      top: 80px;
+      right: -96px;
+      background: black;
+      border-radius: 48px;
+      transform: rotate(-45deg);
+      height: 640px;
+      width: 1120px;
+      z-index: -2;
+      animation: animate 1s linear 1;
+    }
 
-  .home-page .home-content h3{
-    margin-top: -4rem;
-  }
+    .home-page .home-content{
+      text-align: center;
+    }
 
-  .home-page .home-content p{
-    padding: 3rem 0;
-  }
+    .home-page .home-content h3{
+      margin-top: -4rem;
+    }
 
-   .order-btn{
-    font-size: 1.7rem;
-    padding: .7rem 4rem;
-    border-radius: 5rem;
-    margin-top: 2rem;
-    background: lightgray;
-    cursor: pointer;
-    border: .2rem solid white;
-    color: black;
-  }
-  .order-btn:hover{
-    background: white;
-    color: red;
-  }
+    .home-page .home-content p{
+      padding: 3rem 0;
+    }
+
+    .order-btn{
+      font-size: 1.7rem;
+      padding: .7rem 4rem;
+      border-radius: 5rem;
+      margin-top: 2rem;
+      background: lightgray;
+      cursor: pointer;
+      border: .2rem solid white;
+      color: black;
+    }
+
+    .order-btn:hover{
+      background: white;
+      color: red;
+    }
 
   }
 
