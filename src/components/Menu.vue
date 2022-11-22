@@ -183,7 +183,6 @@ export default {
         description: 'Sauteed beef & chicken with tomatoe & onions over french fries with rice.'
       },
       {
-        // image: 'images/menu/meats/parrillada-de-la-casa/IMG_6611.JPG',
         image: 'images/main-images/parrillada-de-la-casa.png',
         title: 'Parrillada De La Casa',
         price: '$25.85',
@@ -426,7 +425,7 @@ export default {
       this.showSoups = false;
     },
     soupsClicked: function(){
-      console.log("meatas clicked");
+      console.log("meats clicked");
       this.showChicken = false;
       this.showMeats = false;
       this.showSeafoods = false;
@@ -448,10 +447,12 @@ export default {
     width: 1200px;
     margin: 200px auto;
   }
+
   .menu-heading{
     text-align: center;
     margin-bottom: 60px;
   }
+
   .menu-heading h4{
     text-transform: capitalize;
     font-size: 36px;
@@ -542,6 +543,7 @@ export default {
     margin-bottom: 4rem;
     color: white;
   }
+
   .menu-btn:hover{
     background: red;
     color: white;
@@ -567,12 +569,14 @@ export default {
       margin-bottom: 1rem;
       font-size: 0.9rem;
     }
+
   }
 
   @media (max-width: 769px){
     .container-menu{
       margin: 150px auto;
     }
+
   }
 
   @media (max-width: 610px){
@@ -584,6 +588,7 @@ export default {
       margin: 20px;
       display: block;
     }
+
     .menu-item img{
       max-width: 325px;
     }
@@ -596,6 +601,7 @@ export default {
       margin-bottom: 1rem;
       margin-right: 1rem;
     }
+
   }
 
   @media (max-width: 457px){
@@ -617,7 +623,6 @@ export default {
 
     .menu-item img{
       max-width: 290px;
-
     }
 
     .buttons-wrapper{
@@ -629,11 +634,10 @@ export default {
       margin-bottom: 0.5rem;
       margin-right: 2rem;
     }
+
   }
 
   @media (max-width: 360px){
-    
-
     .menu-item{
       display: block;
       margin: -11px;
@@ -641,6 +645,5 @@ export default {
     }
 
   }
-
 
 </style>
