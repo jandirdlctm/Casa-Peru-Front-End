@@ -1,8 +1,6 @@
 <template>
   <div id="app">
 
-
-
     <header>
       <a href="/" class="casa-peru-logo"><img src="./assets/logo.png"></a>
 
@@ -71,14 +69,17 @@ import {Slide} from 'vue-burger-menu'
 
 export default {
   name: 'App',
+
   components: {
     Slide
   },
+
   data: function(){
     return{
       closeMode: false,
     }
   },
+
   methods:{
     navButtonClicked: function(){
       console.log("hamburger button clicked");
@@ -91,6 +92,7 @@ export default {
 </script>
 
 <style>
+
 #app {
 }
 
@@ -140,82 +142,46 @@ header #menu-bar{
   display: none;
 }
 
-@media (max-width: 768px){
-  header #menu-bar{
-    display: block;
-  }
-  header .navbar{
-    position: fixed;
-    top: 8rem;
-    left: 0;
-    width: 100%;
-    background: red;
-    border-top: .2rem solid rgba(0,0,0,.1);
-    transform: scaleY(0);
-    transform-origin: top;
-    opacity: 0;
-  }
-  header .navbar ul{
-    flex-flow: column;
-    width: 100%;
-  }
-  header .navbar ul li{
-    margin: 1.5rem;
-    width: 100%;
-  }
-  header .navbar ul li a{
-    display: block;
-    color: white;
-    padding-left: 2rem;
-    font-size: 2rem;
-  }
-  header .navbar ul li a:hover{
-    color: black;
-    border-color: black;
-  }
-
-}
-
 /* footer */
 .footer-container{
   background: #282727;
   padding: 1rem 7%;
 }
 
- .box-wrapper{
+.box-wrapper{
   display: flex;
   flex-wrap: wrap;
 }
 
- .wrapper{
+.wrapper{
   flex: 1 1 25rem;
   margin: 2rem;
 }
 
- .wrapper h3{
+.wrapper h3{
   font-size: 2.5rem;
   color: white;
   padding: 1rem 0;
   font-weight: normal;
 }
- .wrapper p{
+.wrapper p{
   font-size: 1.7rem;
   color: #eee;
   padding: 1rem 0;
 }
 
- .wrapper a{
+.wrapper a{
   font-size: 1.7rem;
   color: #eee;
   padding: 1rem 0;
   display: block;
 }
 
- .wrapper a:hover{
+.wrapper a:hover{
   color: red;
 }
 
- .wrapper p i{
+.wrapper p i{
   padding-right: .5rem;
   color: red;
 }
@@ -259,43 +225,82 @@ td {
   color: white;
 }
 
-@media (max-width: 474px){
-    
-    .dev-signature{
-      font-size: 0.95rem;
-    }
+@media (max-width: 768px){
 
-  }
-  @media (max-width: 408px){
-    
-    .dev-signature{
-      font-size: 0.75rem;
-    }
-
-  }
-  @media (max-width: 384px){
-    
-    .dev-signature{
-      font-size: 0.57rem;
-    }
-
+  header #menu-bar{
+    display: block;
   }
 
+  header .navbar{
+    position: fixed;
+    top: 8rem;
+    left: 0;
+    width: 100%;
+    background: red;
+    border-top: .2rem solid rgba(0,0,0,.1);
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+  }
+
+  header .navbar ul{
+    flex-flow: column;
+    width: 100%;
+  }
+
+  header .navbar ul li{
+    margin: 1.5rem;
+    width: 100%;
+  }
+
+  header .navbar ul li a{
+    display: block;
+    color: white;
+    padding-left: 2rem;
+    font-size: 2rem;
+  }
+
+  header .navbar ul li a:hover{
+    color: black;
+    border-color: black;
+  }
+
+}
+
+@media (max-width: 474px){ 
+
+  .dev-signature{
+    font-size: 0.95rem;
+  }
+
+}
+
+@media (max-width: 408px){
+  
+  .dev-signature{
+    font-size: 0.75rem;
+  }
+
+}
+  
+@media (max-width: 384px){
+    
+  .dev-signature{
+    font-size: 0.57rem;
+  }
+
+}
 
 @media (max-width: 360px){
     
-    td {
-      padding-left: 40px;
-    }
-    .dev-signature{
-      font-size: 0.55rem;
-    }
-
+  td {
+    padding-left: 40px;
   }
 
+  .dev-signature{
+    font-size: 0.55rem;
+  }
 
-
-
-
+}
 
 </style>
