@@ -1,98 +1,90 @@
 <template>
   <div id="app">
 
-
-
     <header>
       <a href="/" class="casa-peru-logo"><img src="./assets/logo.png"></a>
-      <!-- <div id="menu-bar" class="fas fa-bars">
 
-      </div> -->
-
-
-      <!-- <button v-on:click="navButtonClicked" type="button" name="button">aa</button> -->
-      <!-- v-bind:class="{'fas fa-times': closeMode}"> -->
-      <!-- <button v-on:click="navButtonClicked" type="button" name="button" v-bind:class="{'fas fa-times': closeMode, 'fas fa-bars': !closeMode}"></button> -->
-      <!-- <div v-on:click="navButtonClicked" class="menu-bar" ><i  v-bind:class="icon"></i></div> -->
-      <!-- v-bind:class="{ 'fas fa-times': closeMode==true }" -->
-      <!-- <div class="">
-        <html:button v-on:click="navButtonClicked" id="menu-bar" class="fas fa-bars" type="button" name="button"></html:button>
-      </div> -->
-
-      <Slide right>
-
+      <Slide right :closeOnNavigation="true">
           <a class="nav-link"><router-link to="/">Home</router-link></a>
           <a class="nav-link"><router-link to="/house-specialties">House Specialties</router-link></a>
           <a class="nav-link"><router-link to="/menu">Menu</router-link></a>
           <a class="nav-link"><router-link to="/reviews">Reviews</router-link></a>
           <a class="contact-link" href="#anchor-point" style="color: white;">Contact</a>
-
       </Slide>
 
-
-
-      <!-- <nav class="navbar">
-        <ul>
-          <li><a><router-link to="/">Home</router-link></a></li>
-          <li><a><router-link to="/house-specialties">House Specialties</router-link></a></li>
-          <li><a><router-link to="/menu">Menu</router-link></a></li>
-          <li><a><router-link to="/reviews">Reviews</router-link></a></li>
-          <li><a href="#anchor-point">Contact</a></li>
-        </ul>
-      </nav> -->
     </header>
+
     <router-view></router-view>
+
     <!-- FOOTER -->
     <a name="anchor-point"></a>
     <div class="footer-container">
       <div class="box-wrapper">
         <div class="wrapper">
-        <h3>Contact Info</h3>
-        <p><a href="https://www.google.com/maps/dir/37.093376,-113.5640576/google.+maps+casa+peru/@38.8752355,-114.8586644,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x87528b65a25e6bef:0x11b7cea0a5c8b5ec!2m2!1d-111.9419932!2d40.6975339" target="_blank"><i class="fas fa-map-marker-alt"></i>   1830 W 3500 S West Valley City, UT</a></p>
-        <p><a href="tel:8019725807"><i class="fas fa-phone-volume"></i>   (801) 972-5807</a></p>
-      </div>
+          <h3>Contact Info</h3>
+          <p><a href="https://www.google.com/maps/dir/37.093376,-113.5640576/google.+maps+casa+peru/@38.8752355,-114.8586644,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x87528b65a25e6bef:0x11b7cea0a5c8b5ec!2m2!1d-111.9419932!2d40.6975339" target="_blank"><i class="fas fa-map-marker-alt"></i>   1830 W 3500 S West Valley City, UT</a></p>
+          <p><a href="tel:8019725807"><i class="fas fa-phone-volume"></i>   (801) 972-5807</a></p>
+        </div>
 
-      <div class="wrapper">
-        <h3>Quick Links</h3>
-        <a href="/">Home</a>
-        <a href="/house-specialties">House Specialties</a>
-        <a href="/menu">Menu</a>
-        <a href="/reviews">Reviews</a>
-      </div>
+        <div class="wrapper">
+          <h3>Hours</h3>
+          <div class="hrs-of-operation-wrapper">
+            <table>
+              <tr><th>Monday</th><td>11am - 8pm</td></tr>
+              <tr><th>Tuesday</th><td>CLOSED</td></tr>
+              <tr><th>Wednesday</th><td>11am - 8pm</td></tr>
+              <tr><th>Thursday</th><td>11am - 8pm</td></tr>
+              <tr><th>Friday</th><td>11am - 9pm</td></tr>
+              <tr><th>Saturday</th><td>11am - 9:30pm</td></tr>
+              <tr><th>Sunday</th><td>11am - 6:30pm</td></tr>
+            </table>
+          </div>
+        </div>
 
-      <div class="wrapper">
-        <h3>Social Media</h3>
-        <a href="https://www.facebook.com/pg/casaperurestaurant14/about/?ref=page_internal" target="_blank">Facebook</a>
-      </div>
+        <div class="wrapper">
+          <h3>Quick Links</h3>
+          <a href="/">Home</a>
+          <a href="/house-specialties">House Specialties</a>
+          <a href="/menu">Menu</a>
+          <a href="/reviews">Reviews</a>
+        </div>
 
-      <!-- <h1 class="credit">Developed by <a href="#">Kelsey meza </a> all rights reserved.</h1> -->
+        <div class="wrapper">
+          <h3>Social Media</h3>
+          <a href="https://www.facebook.com/pg/casaperurestaurant14/about/?ref=page_internal" target="_blank">Facebook</a>
+        </div>
+
+      </div>
+      
+      <div class="dev-sig-wrapper">
+        <h1 class="dev-signature">©Developed by Jandir Porta </h1>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// import Home from './components/Home.vue'
+
 import {Slide} from 'vue-burger-menu'
 
 export default {
   name: 'App',
+
   components: {
     Slide
   },
+
   data: function(){
     return{
       closeMode: false,
-      // icon: "fas fa-times"
     }
   },
+
   methods:{
     navButtonClicked: function(){
       console.log("hamburger button clicked");
       this.closeMode = !this.closeMode;
       console.log(this.closeMode);
-      // this.icon = "fas fa-times";
-      // console.log(this.icon);
     }
   }
 
@@ -100,6 +92,7 @@ export default {
 </script>
 
 <style>
+
 #app {
 }
 
@@ -149,100 +142,74 @@ header #menu-bar{
   display: none;
 }
 
-@media (max-width: 768px){
-  header #menu-bar{
-    display: block;
-  }
-  header .navbar{
-    position: fixed;
-    top: 8rem;
-    left: 0;
-    width: 100%;
-    background: red;
-    border-top: .2rem solid rgba(0,0,0,.1);
-    transform: scaleY(0);
-    transform-origin: top;
-    opacity: 0;
-  }
-  header .navbar ul{
-    flex-flow: column;
-    width: 100%;
-  }
-  header .navbar ul li{
-    margin: 1.5rem;
-    width: 100%;
-  }
-  header .navbar ul li a{
-    display: block;
-    color: white;
-    padding-left: 2rem;
-    /* border-left: .2rem solid blac; */
-    font-size: 2rem;
-  }
-  header .navbar ul li a:hover{
-    color: black;
-    border-color: black;
-  }
-
-}
-
 /* footer */
 .footer-container{
   background: #282727;
   padding: 1rem 7%;
 }
 
- .box-wrapper{
+.box-wrapper{
   display: flex;
   flex-wrap: wrap;
 }
 
- .wrapper{
+.wrapper{
   flex: 1 1 25rem;
   margin: 2rem;
 }
 
- .wrapper h3{
+.wrapper h3{
   font-size: 2.5rem;
   color: white;
   padding: 1rem 0;
   font-weight: normal;
 }
- .wrapper p{
+.wrapper p{
   font-size: 1.7rem;
   color: #eee;
   padding: 1rem 0;
 }
 
- .wrapper a{
+.wrapper a{
   font-size: 1.7rem;
   color: #eee;
   padding: 1rem 0;
   display: block;
 }
 
- .wrapper a:hover{
+.wrapper a:hover{
   color: red;
 }
 
- .wrapper p i{
+.wrapper p i{
   padding-right: .5rem;
   color: red;
 }
 
-.credit{
-  font-size: 2rem;
+.dev-signature{
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 1.0rem;
   text-align: center;
-  border-top: .2rem solid rgba(255,255,255,.7);
-  padding: 2rem 1rem;
-  font-weight: normal;
+  border-top: .1rem solid rgba(255,255,255,.3);
+  padding: 0.8rem 1rem;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
   letter-spacing: 1rem;
   color: white;
 }
 
-.credit a{
-  color: red;
+table {
+  border-collapse: separate;
+  border-spacing: 0px 17px;
+  font-size: 1.7rem;
+  text-align: left;
+  color: white;
+}
 
+td {
+  padding-left: 60px;
 }
 
 /* HAMBURGER */
@@ -258,10 +225,82 @@ header #menu-bar{
   color: white;
 }
 
+@media (max-width: 768px){
 
+  header #menu-bar{
+    display: block;
+  }
 
+  header .navbar{
+    position: fixed;
+    top: 8rem;
+    left: 0;
+    width: 100%;
+    background: red;
+    border-top: .2rem solid rgba(0,0,0,.1);
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+  }
 
+  header .navbar ul{
+    flex-flow: column;
+    width: 100%;
+  }
 
+  header .navbar ul li{
+    margin: 1.5rem;
+    width: 100%;
+  }
 
+  header .navbar ul li a{
+    display: block;
+    color: white;
+    padding-left: 2rem;
+    font-size: 2rem;
+  }
+
+  header .navbar ul li a:hover{
+    color: black;
+    border-color: black;
+  }
+
+}
+
+@media (max-width: 474px){ 
+
+  .dev-signature{
+    font-size: 0.95rem;
+  }
+
+}
+
+@media (max-width: 408px){
+  
+  .dev-signature{
+    font-size: 0.75rem;
+  }
+
+}
+  
+@media (max-width: 384px){
+    
+  .dev-signature{
+    font-size: 0.57rem;
+  }
+
+}
+
+@media (max-width: 360px){
+    
+  td {
+    padding-left: 40px;
+  }
+
+  .dev-signature{
+    font-size: 0.55rem;
+  }
+
+}
 
 </style>
