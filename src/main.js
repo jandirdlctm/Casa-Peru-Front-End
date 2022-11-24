@@ -6,7 +6,7 @@ import Home from "./components/Home";
 import HouseSpecialties from "./components/HouseSpecialties";
 import Menu from "./components/Menu";
 import Reviews from "./components/Reviews";
-// import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 
 Vue.use(VueRouter);
@@ -19,7 +19,7 @@ const router = new VueRouter({
     {path: '/house-specialties', component: HouseSpecialties},
     {path: '/menu', component: Menu},
     {path: '/reviews', component: Reviews},
-    // {path: '/contact', component: Contact},
+    {path: '/contact', component: Contact},
     {path: '*', component: NotFound}
   ],
   mode: "history"

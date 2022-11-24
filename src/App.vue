@@ -1,6 +1,8 @@
 <template>
   <div id="app">
 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <header>
       <a href="/" class="casa-peru-logo"><img src="./assets/logo.png"></a>
 
@@ -9,7 +11,8 @@
           <a class="nav-link"><router-link to="/house-specialties">House Specialties</router-link></a>
           <a class="nav-link"><router-link to="/menu">Menu</router-link></a>
           <a class="nav-link"><router-link to="/reviews">Reviews</router-link></a>
-          <a class="contact-link" href="#anchor-point" style="color: white;">Contact</a>
+          <a class="nav-link"><router-link to="/contact">Contact</router-link></a>
+          <!-- <a class="contact-link" href="#anchor-point" style="color: white;">Contact</a> -->
       </Slide>
 
     </header>
