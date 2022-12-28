@@ -4,6 +4,7 @@
       <h3>CASA PERÚ IS WAITING FOR YOU TO EXPERIENCE THE BEST OF PERUVIAN CUISINE</h3>
       <p>Since 2016 Casa Perú Restaurant is one of the most popular peruvian cuisine restaurants in the Salt Lake City area, our goal is to make our customers feel at home and deliver the best experience possible.</p>
       <a href="https://www.clover.com/online-ordering/casa-peru-west-valley-city" target="_blank"><button class="order-btn">ORDER NOW</button></a>
+      <a href="/menu"><button class="menu-btn">VIEW MENU</button></a>
     </div>
 
     <div class="hero-image">
@@ -105,6 +106,23 @@ export default {
     color: white;
   }
 
+  .menu-btn{
+    font-size: 27.2px;
+    padding: 11.2px 64px;
+    border-radius: 80px;
+    margin-top: 16px;
+    margin-left: 10px;
+    background: red;
+    cursor: pointer;
+    border: 3.2px solid white;
+    color: white;
+  }
+
+  .menu-btn:hover{
+    background: black;
+    color: white;
+  }
+
   .home-page::before,
   .home-page::after{
     content: '';
@@ -149,6 +167,22 @@ export default {
     }
 
     .order-btn:hover{
+      background: white;
+      color: red;
+    }
+
+    .menu-btn{
+      font-size: 1.7rem;
+      padding: .7rem 4rem;
+      border-radius: 5rem;
+      margin-top: 1rem;
+      background: none;
+      cursor: pointer;
+      border: .2rem solid white;
+      color: white;
+    }
+
+    .menu-btn:hover{
       background: white;
       color: red;
     }
@@ -203,6 +237,28 @@ export default {
       color: red;
     }
 
+    .menu-btn{
+      font-size: 1.7rem;
+      padding: .7rem 4rem;
+      border-radius: 5rem;
+      margin-top: 2rem;
+      background: lightgray;
+      cursor: pointer;
+      border: .2rem solid white;
+      color: black;
+    }
+
+    .menu-btn:hover{
+      background: white;
+      color: red;
+    }
+  }
+  @media (max-width: 404px){
+    .menu-btn{
+      display: block;
+      margin: auto;
+      margin-top: 10px;
+    }
   }
 
 </style>
