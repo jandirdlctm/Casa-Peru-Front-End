@@ -261,4 +261,24 @@ export default {
     }
   }
 
+  @media (max-width: 375px){
+    .home-page .home-content h3{
+      font-size: 3.3rem;
+      padding-top: 11px;
+    }
+  }
+
+  @media (max-width: 360px){
+    .home-page .home-content h3{
+      font-size: 3.1rem;
+    }
+  }
+
+  @media (max-width: 320px){
+    .home-page .home-content h3{
+      font-size: 2.9rem;
+      padding-top: 9px;
+    }
+  }
+
 </style>
