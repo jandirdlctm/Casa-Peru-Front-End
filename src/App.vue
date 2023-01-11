@@ -19,6 +19,8 @@
 
     <router-view></router-view>
 
+    <!-- <Contact /> -->
+
     <!-- FOOTER -->
     <a name="anchor-point"></a>
     <div class="footer-container">
@@ -69,12 +71,13 @@
 <script>
 
 import {Slide} from 'vue-burger-menu'
-
+// import Contact from './components/Contact.vue'
 export default {
   name: 'App',
 
   components: {
-    Slide
+    Slide,
+    // Contact
   },
 
   data: function(){

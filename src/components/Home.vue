@@ -1,22 +1,36 @@
 <template>
   <section class="home-page" id="home-page">
-    <div class="home-content">
+    <div class="home-section">
+      <div class="home-content">
+        <h3>CASA PERÚ IS WAITING FOR YOU TO EXPERIENCE THE BEST OF PERUVIAN CUISINE</h3>
+        <p>Since 2016 Casa Perú Restaurant is one of the most popular peruvian cuisine restaurants in the Salt Lake City area, our goal is to make our customers feel at home and deliver the best experience possible.</p>
+        <a href="https://www.clover.com/online-ordering/casa-peru-west-valley-city" target="_blank"><button class="order-btn">ORDER NOW</button></a>
+        <a href="/menu"><button class="view-menu-btn">VIEW MENU</button></a>
+      </div>
+      <div class="hero-image">
+        <img :src="mainImageSrc">
+      </div>
+    </div>
+    <!-- <div class="home-content">
       <h3>CASA PERÚ IS WAITING FOR YOU TO EXPERIENCE THE BEST OF PERUVIAN CUISINE</h3>
       <p>Since 2016 Casa Perú Restaurant is one of the most popular peruvian cuisine restaurants in the Salt Lake City area, our goal is to make our customers feel at home and deliver the best experience possible.</p>
       <a href="https://www.clover.com/online-ordering/casa-peru-west-valley-city" target="_blank"><button class="order-btn">ORDER NOW</button></a>
       <a href="/menu"><button class="view-menu-btn">VIEW MENU</button></a>
     </div>
-
     <div class="hero-image">
       <img :src="mainImageSrc">
-    </div>
-
+    </div> -->
+    <Contact />
   </section>
 </template>
 
 <script>
+import Contact from './Contact.vue'
 export default {
   name: 'Home',
+  components: {
+    Contact
+  },
   data (){
     return{
       images: [],
@@ -50,14 +64,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-  section{
+  .home-section{
     min-height: 100vh;
     padding: 16px 10%;
     padding-top: 136px;
     background: lightgray;
   }
+  /* section{
+    min-height: 100vh;
+    padding: 16px 10%;
+    padding-top: 136px;
+    background: lightgray;
+  } */
 
-  .home-page{
+  .home-section{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,24 +87,24 @@ export default {
     overflow: hidden;
   }
 
-  .home-page .hero-image{
+  .home-section .hero-image{
     flex: 1 1 624px;
   }
 
-  .home-page .hero-image img{
+  .home-section .hero-image img{
     width: 120%;
   }
 
-  .home-page .home-content{
+  .home-section .home-content{
     flex: 1 1 624px;
   }
 
-  .home-page .home-content h3{
+  .home-section .home-content h3{
     color: #333;
     font-size: 64px;
   }
 
-  .home-page .home-content p{
+  .home-section .home-content p{
     color: #666;
     font-size: 16px;
     padding: 16px 0;
@@ -123,8 +143,8 @@ export default {
     color: white;
   }
 
-  .home-page::before,
-  .home-page::after{
+  .home-section::before,
+  .home-section::after{
     content: '';
     position: absolute;
     top: 80px;
@@ -139,17 +159,17 @@ export default {
   }
 
   @media (max-width: 1581px){
-    section{
+    .home-section{
       background: red;
     }
 
-    .home-page .home-content h3{
+    .home-section .home-content h3{
       margin-top: 5rem;
       color: white;
       font-size: 4rem;
     }
 
-    .home-page .home-content p{
+    .home-section .home-content p{
       color: #FFFFFF;
       font-size: 1rem;
       padding: 1rem 0;
@@ -194,8 +214,8 @@ export default {
   }
 
   @media (max-width: 754px){
-    .home-page::before,
-    .home-page::after{
+    .home-section::before,
+    .home-section::after{
       content: '';
       position: absolute;
       top: 80px;
@@ -209,15 +229,15 @@ export default {
       animation: animate 1s linear 1;
     }
 
-    .home-page .home-content{
+    .home-section .home-content{
       text-align: center;
     }
 
-    .home-page .home-content h3{
+    .home-section .home-content h3{
       margin-top: -4rem;
     }
 
-    .home-page .home-content p{
+    .home-section .home-content p{
       padding: 3rem 0;
     }
 
@@ -262,20 +282,20 @@ export default {
   }
 
   @media (max-width: 375px){
-    .home-page .home-content h3{
+    .home-section .home-content h3{
       font-size: 3.3rem;
       padding-top: 11px;
     }
   }
 
   @media (max-width: 360px){
-    .home-page .home-content h3{
+    .home-section .home-content h3{
       font-size: 3.1rem;
     }
   }
 
   @media (max-width: 320px){
-    .home-page .home-content h3{
+    .home-section .home-content h3{
       font-size: 2.9rem;
       padding-top: 9px;
     }

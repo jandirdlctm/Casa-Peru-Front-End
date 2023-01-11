@@ -439,6 +439,9 @@ export default {
 <style lang="css" scoped>
 
   section{
+    min-height: 100vh;
+    padding: 16px 10%;
+    padding-top: 136px;
     background-color: red;
     margin-top: -109px;
   }

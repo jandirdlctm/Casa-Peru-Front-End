@@ -1,6 +1,7 @@
 <template>
     <section class="contact">
-        <div class="content">
+        <div class="contact-content">
+            <div class="content">
             <h2>Contact Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo nisi natus nobis at accusantium. Fugit possimus nemo molestiae vero necessitatibus illum recusandae adipisci, aperiam placeat neque ipsam temporibus doloremque.</p>
         </div>
@@ -62,6 +63,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 </template>
 
@@ -80,6 +82,10 @@ export default {
 </script>
 
 <style scoped>
+
+.contact-content{
+    padding: 16px 10%;
+}
 .contact{
     position: relative;
     min-height: 100vh;
@@ -87,7 +93,8 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(../../public/images/background-images/contact_us_background.jpg) no-repeat ;
+    /* background: url(../../public/images/background-images/contact_us_background.jpg) no-repeat ; */
+    background-color: dimgray;
 }
 
 .contact .content{
