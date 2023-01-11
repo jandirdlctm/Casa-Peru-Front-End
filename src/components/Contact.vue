@@ -105,15 +105,16 @@ export default {
 }
 
 .contact .content h2{
-    font-size: 36px;
+    font-size: 50px;
     font-weight: 500;
+    font-family: 'Oswald', sans-serif;
     color: #fff;
 }
 
 .contact .content p{
     font-weight: 300;
     /* color: #fff; */
-    color: darkgray;
+    color: lightgray;
     margin-top: 25px;
 }
 
@@ -252,6 +253,10 @@ table{
 
     .container{
         margin-top: 30px;
+    }
+
+    .contact .content h2{
+        font-size: 36px;
     }
 }
 
