@@ -86,20 +86,21 @@ export default {
 .contact-content{
     padding: 16px 10%;
 }
-.contact{
+.contact-content{
     position: relative;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     /* background: url(../../public/images/background-images/contact_us_background.jpg) no-repeat ; */
-    background-color: dimgray;
+    /* background-color: dimgray; */
+    background-color: black;
 }
 
 .contact .content{
     max-width: 800px;
-    margin-top: 100px;
+    margin-top: 54px;
     text-align: center;   
 }
 
@@ -111,14 +112,16 @@ export default {
 
 .contact .content p{
     font-weight: 300;
-    color: #fff;
+    /* color: #fff; */
+    color: darkgray;
+    margin-top: 25px;
 }
 
 .container{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .container .contactInfo{
@@ -159,7 +162,8 @@ table{
 
 .container .contactInfo .box .text h3{
     font-weight: 500;
-    color: #00bcd4;
+    /* color: #00bcd4; */
+    color: white;
 }
 
 /* CONTACT FORM */
@@ -216,7 +220,8 @@ table{
 
 .contactForm .inputBox input[type="submit"]{
     width: 100px;
-    background: #00bcd4;
+    /* background: #00bcd4; */
+    background: red;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -243,6 +248,10 @@ table{
 @media (max-width: 768px) {
     .contact .content{
         margin-top: 15px;
+    }
+
+    .container{
+        margin-top: 30px;
     }
 }
 

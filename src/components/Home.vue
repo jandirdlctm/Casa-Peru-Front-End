@@ -170,7 +170,8 @@ export default {
     }
 
     .home-section .home-content p{
-      color: #FFFFFF;
+      /* color: #FFFFFF; */
+      color: lightgray;
       font-size: 1rem;
       padding: 1rem 0;
     }
