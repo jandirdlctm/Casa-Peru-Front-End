@@ -1,6 +1,7 @@
 <template>
     <section class="contact">
-        <div class="content">
+        <div class="contact-content">
+            <div class="content">
             <h2>Contact Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo nisi natus nobis at accusantium. Fugit possimus nemo molestiae vero necessitatibus illum recusandae adipisci, aperiam placeat neque ipsam temporibus doloremque.</p>
         </div>
@@ -62,6 +63,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 </template>
 
@@ -80,38 +82,43 @@ export default {
 </script>
 
 <style scoped>
-.contact{
+
+.contact-content{
+    padding: 16px 10%;
+}
+.contact-content{
     position: relative;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(../../public/images/background-images/contact_us_background.jpg) no-repeat ;
+    background-color: black;
 }
 
 .contact .content{
     max-width: 800px;
-    margin-top: 100px;
+    margin-top: 54px;
     text-align: center;   
 }
 
 .contact .content h2{
-    font-size: 36px;
+    font-size: 50px;
     font-weight: 500;
+    font-family: 'Oswald', sans-serif;
     color: #fff;
 }
 
 .contact .content p{
     font-weight: 300;
-    color: #fff;
+    color: lightgray;
+    margin-top: 25px;
 }
 
 .container{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .container .contactInfo{
@@ -152,7 +159,7 @@ table{
 
 .container .contactInfo .box .text h3{
     font-weight: 500;
-    color: #00bcd4;
+    color: white;
 }
 
 /* CONTACT FORM */
@@ -209,7 +216,7 @@ table{
 
 .contactForm .inputBox input[type="submit"]{
     width: 100px;
-    background: #00bcd4;
+    background: black;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -236,6 +243,14 @@ table{
 @media (max-width: 768px) {
     .contact .content{
         margin-top: 15px;
+    }
+
+    .container{
+        margin-top: 30px;
+    }
+
+    .contact .content h2{
+        font-size: 36px;
     }
 }
 

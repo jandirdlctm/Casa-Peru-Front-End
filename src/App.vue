@@ -19,6 +19,8 @@
 
     <router-view></router-view>
 
+    <!-- <Contact /> -->
+
     <!-- FOOTER -->
     <a name="anchor-point"></a>
     <div class="footer-container">
@@ -29,7 +31,7 @@
           <p><a href="tel:8019725807"><i class="fas fa-phone-volume"></i>   (801) 972-5807</a></p>
         </div>
 
-        <div class="wrapper">
+        <!-- <div class="wrapper">
           <h3>Hours</h3>
           <div class="hrs-of-operation-wrapper">
             <table>
@@ -42,7 +44,7 @@
               <tr><th>Sunday</th><td>11am - 6:30pm</td></tr>
             </table>
           </div>
-        </div>
+        </div> -->
 
         <div class="wrapper">
           <h3>Quick Links</h3>
@@ -69,7 +71,6 @@
 <script>
 
 import {Slide} from 'vue-burger-menu'
-
 export default {
   name: 'App',
 
