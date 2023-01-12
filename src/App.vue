@@ -71,13 +71,11 @@
 <script>
 
 import {Slide} from 'vue-burger-menu'
-// import Contact from './components/Contact.vue'
 export default {
   name: 'App',
 
   components: {
-    Slide,
-    // Contact
+    Slide
   },
 
   data: function(){

@@ -70,13 +70,7 @@ export default {
     padding-top: 136px;
     background: lightgray;
   }
-  /* section{
-    min-height: 100vh;
-    padding: 16px 10%;
-    padding-top: 136px;
-    background: lightgray;
-  } */
-
+  
   .home-section{
     display: flex;
     align-items: center;

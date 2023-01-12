@@ -90,11 +90,8 @@ export default {
     position: relative;
     min-height: 100vh;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    /* background: url(../../public/images/background-images/contact_us_background.jpg) no-repeat ; */
-    /* background-color: dimgray; */
     background-color: black;
 }
 
@@ -113,7 +110,6 @@ export default {
 
 .contact .content p{
     font-weight: 300;
-    /* color: #fff; */
     color: lightgray;
     margin-top: 25px;
 }
@@ -163,7 +159,6 @@ table{
 
 .container .contactInfo .box .text h3{
     font-weight: 500;
-    /* color: #00bcd4; */
     color: white;
 }
 
@@ -221,8 +216,7 @@ table{
 
 .contactForm .inputBox input[type="submit"]{
     width: 100px;
-    /* background: #00bcd4; */
-    background: red;
+    background: black;
     color: #fff;
     border: none;
     cursor: pointer;
