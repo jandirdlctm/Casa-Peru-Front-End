@@ -308,7 +308,7 @@ export default {
       {
         image: 'images/menu/appetizers/anticuchos/IMG_6558.JPG',
         title: 'Anticuchos',
-        price: '$8.99',
+        price: '$8.00',
         description: 'Peruvian style kabobs beef heart served with deep fried potatoes & corn.'
       },
       {
