@@ -20,16 +20,19 @@
     <div class="hero-image">
       <img :src="mainImageSrc">
     </div> -->
+    <MenuOptions />
     <Contact />
   </section>
 </template>
 
 <script>
 import Contact from './Contact.vue'
+import MenuOptions from './MenuOptions.vue'
 export default {
   name: 'Home',
   components: {
-    Contact
+    Contact,
+    MenuOptions
   },
   data (){
     return{
