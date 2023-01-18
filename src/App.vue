@@ -3,6 +3,20 @@
 
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet">
+
+
     <header>
       <a href="/" class="casa-peru-logo"><img src="./assets/logo.png"></a>
 
@@ -83,7 +97,18 @@ export default {
       closeMode: false,
     }
   },
+  mounted() {
+      let recaptchaScript = document.createElement('script')
+      recaptchaScript.setAttribute('type', 'module')
+      recaptchaScript.setAttribute('src', 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+      document.head.appendChild(recaptchaScript)
 
+      let iconScript = document.createElement('script')
+      iconScript.setAttribute('type', 'nomodule')
+      iconScript.setAttribute('src', 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+      
+      document.head.appendChild(iconScript)
+  },
   methods:{
     navButtonClicked: function(){
       console.log("hamburger button clicked");
