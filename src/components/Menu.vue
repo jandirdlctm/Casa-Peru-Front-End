@@ -5,7 +5,7 @@
         <h4><span></span> our menu</h4>
       </div>
       <div class="buttons-wrapper">
-        <button @click="soupsClicked" class="menu-btn" type="button" name="button">SPECIALTIES</button>
+        <!-- <button @click="soupsClicked" class="menu-btn" type="button" name="button">SPECIALTIES</button> -->
         <button @click="chickenClicked" class="menu-btn" type="button" name="button">CHICKEN</button>
         <button @click="meatsClicked" class="menu-btn" type="button" name="button">MEATS</button>
         <button @click="seafoodsClicked" class="menu-btn" type="button" name="button">SEAFOOD</button>
