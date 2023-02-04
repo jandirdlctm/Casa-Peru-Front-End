@@ -5,11 +5,16 @@
         <h4><span></span> our menu</h4>
       </div>
       <div class="buttons-wrapper">
+        <!-- <button @click="soupsClicked" class="menu-btn" type="button" name="button">SPECIALTIES</button> -->
         <button @click="chickenClicked" class="menu-btn" type="button" name="button">CHICKEN</button>
         <button @click="meatsClicked" class="menu-btn" type="button" name="button">MEATS</button>
         <button @click="seafoodsClicked" class="menu-btn" type="button" name="button">SEAFOOD</button>
         <button @click="appetizersClicked" class="menu-btn" type="button" name="button">APPETIZERS</button>
         <button @click="soupsClicked" class="menu-btn" type="button" name="button">SOUPS</button>
+        <button @click="soupsClicked" class="menu-btn" type="button" name="button">VEGETARIAN</button>
+        <button @click="soupsClicked" class="menu-btn" type="button" name="button">SIDES</button>
+        <button @click="soupsClicked" class="menu-btn" type="button" name="button">DESSERTS</button>
+        <button @click="soupsClicked" class="menu-btn" type="button" name="button">DRINKS</button>
       </div>
         <div v-if="showChicken" class="wrapper-menu">
           <div  v-for="food in chicken" v-bind:key="food"  class="menu-item">
@@ -303,7 +308,7 @@ export default {
       {
         image: 'images/menu/appetizers/anticuchos/IMG_6558.JPG',
         title: 'Anticuchos',
-        price: '$8.99',
+        price: '$8.00',
         description: 'Peruvian style kabobs beef heart served with deep fried potatoes & corn.'
       },
       {
@@ -439,9 +444,6 @@ export default {
 <style lang="css" scoped>
 
   section{
-    min-height: 100vh;
-    padding: 16px 10%;
-    padding-top: 136px;
     background-color: red;
     margin-top: -109px;
   }
@@ -487,6 +489,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 3rem;
   }
 
   .menu-item{
@@ -543,7 +546,8 @@ export default {
     cursor: pointer;
     border: .2rem solid white;
     margin-right: 3rem;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
+    margin-bottom: 0.5rem;
     color: white;
   }
 
@@ -634,8 +638,17 @@ export default {
     }
 
     .menu-btn{
-      margin-bottom: 0.5rem;
+      margin-bottom: -0.7rem;
       margin-right: 2rem;
+      width: 54px;
+      font-size: 5px;
+    }
+
+  }
+
+  @media (max-width: 375px){
+    .body-menu{
+      width: 308px
     }
 
   }
@@ -647,6 +660,28 @@ export default {
       margin-bottom: 18px;
     }
 
+    .body-menu{
+      width: 308px
+    }
   }
 
+  @media (max-width: 351px){
+    .body-menu{
+      width: 308px
+    }
+
+  }
+  @media (max-width: 335px){
+    .body-menu{
+      width: 296px
+    }
+
+  }
+
+  @media (max-width: 320px){
+    .body-menu{
+      width: 280px
+    }
+
+  }
 </style>
