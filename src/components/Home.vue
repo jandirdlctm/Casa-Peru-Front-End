@@ -43,15 +43,20 @@ export default {
   created (){
     let self = this
     this.images = [
-      
       {
-        image: 'images/main-images/ceviche-de-pescado.png'
+        image: require('../assets/images/seafood/ceviche.png')
       },
       {
-        image: 'images/main-images/lomo-saltado-mixto.png'
+        image: require('../assets/images/meats/lomo-saltado-mixto.png')
       },
       {
-        image: 'images/main-images/parrillada-de-la-casa.png'
+        image: require('../assets/images/meats/parrillada-de-la-casa.png')
+      },
+      {
+        image: require('../assets/images/chicken/mostrito.png')
+      },
+      {
+        image: require('../assets/images/soups/sopa-de-choros.png')
       }
     ],
     setInterval(function(){
@@ -280,6 +285,9 @@ export default {
     .home-section .home-content h3{
       font-size: 3.3rem;
       padding-top: 11px;
+    }
+    .hero-image{
+      margin-top: 20px;
     }
   }
 
