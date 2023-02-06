@@ -73,327 +73,583 @@ export default {
       showSoups : false,
       chicken: [
         {
-          image: 'images/menu/chicken/chaufa-de-pollo/IMG_6404.JPG',
-          title: 'Chaufa De Pollo',
-          price: '$10.85',
-          description: 'Fried rice with chicken, bell peppers & eggs'
+          image: require('../assets/images/chicken/arroz-con-pato.png'),
+          title: 'Arroz Con Pato',
+          price: '$19.99',
+          description: 'Duck thighs or duck breast with green rice and huancaina sauce.'
         },
         {
-          image: 'images/menu/chicken/chaufa-mixto/IMG_6450.JPG',
-          title: 'Chaufa Mixto',
-          price: '$11.99',
-          description: 'Fried rice, beef & chicken bell pepper, eggs & green onions'
-        },
-        {
-          image: 'images/menu/chicken/escabeche-de-pollo/IMG_6563.JPG',
-          title: 'Escabeche De Pollo',
-          price: '$10.25',
-          description: 'Marinated chicken in spice & vinegarcooked with classic salsa escabeche onions and red peppers'
-        },
-        {
-          image: 'images/menu/chicken/lomo-saltado-de-pollo/IMG_6585.JPG',
-          title: 'Lomo Saltado De Pollo',
-          price: '$10.25',
-          description: 'Stir fried lean chicken with tomatoes onions & french fries served with rice'
-        },
-        {
-          image: 'images/menu/chicken/milanesa-de-pollo/IMG_6647.JPG',
+          image: require('../assets/images/chicken/milanesa-de-pollo.png'),
           title: 'Milanesa De Pollo',
-          price: '$9.99',
-          description: 'Delicious breaded chicken served with salad, rice & french fries.'
+          price: '$19.00',
+          description: 'Delicious breaded chicken served w/ salad, rice & french fries.'
         },
         {
-          image: 'images/menu/chicken/mostrito/IMG_6642.JPG',
-          title: 'Mostrito',
-          price: '$11.85',
-          description: 'One 1/4 Rotisserie chicken with french fries, Salad and Fried rice'
+          image: require('../assets/images/chicken/aeropuerto-especial.png'),
+          title: 'Aeropuerto Especial',
+          price: '$22.99',
+          description: 'Sauteed chicken, beef and shrimp. w/ green onions, bean sprout, french fries w/ fried rice, noodles & egg.'
         },
         {
-          image: 'images/menu/chicken/pollo-a-la-plancha/IMG_6514.JPG',
-          title: 'Pollo A La Plancha',
-          price: '$9.85',
-          description: 'Grilled chicken breast served with rice, salad & french fries.'
+          image: require('../assets/images/chicken/escabeche-de-pollo.png'),
+          title: 'Escabeche De Pollo',
+          price: '$20.00',
+          description: 'Marinated chicken in spices & vinegar. Cooked w/ classic salsa escabeche onions.'
         },
         {
-          image: 'images/menu/chicken/tallarin-a-la-huancaina/IMG_6525.JPG',
+          image: require('../assets/images/chicken/tallarin-a-la-huancaina.png'),
           title: 'Tallarin A La Huancaina',
-          price: '$12.85',
-          description: 'Grilled steak or chicken on top of spaghetti with creamy huancaina sauce'
+          price: '$21.85',
+          description: 'Grilled chicken breast, served on top of spaghetti w/ creamy huancaina sauce.'
         },
         {
-          image: 'images/menu/chicken/tallarin-saltado-de-pollo/IMG_6471.JPG',
-          title: 'Tallarin Saltado De Pollo',
-          price: '$10.05',
-          description: 'Pasta sauteed with chicken strip, garlic ginger, onions, tomatoes & peppers'
-        },
-        {
-          image: 'images/menu/chicken/pollo-a-la-brasa/IMG_6460.JPG',
-          title: 'Pollo Entero',
+          image: require('../assets/images/chicken/chaufaron.png'),
+          title: 'Chaufaron',
           price: '$20.99',
-          description: 'Whole rotisserie chicken served with fries & salad'
+          description: 'Fried rice with crispy Pork meat.'
         },
         {
-          image: 'images/menu/chicken/pollo-a-la-brasa/IMG_6460.JPG',
+          image: require('../assets/images/chicken/mostrito.png'),
+          title: 'Monstrito',
+          price: '$18.35',
+          description: 'One 1/4 Rotisserie chicken, french fries, Salad and Fried rice.'
+        },
+        {
+          image: require('../assets/images/chicken/escabeche-de-pollo.png'),
+          title: 'Pollo A La Plancha',
+          price: '$19.99',
+          description: 'Grilled chicken breast served w/ rice, salad & french fries.'
+        },
+        {
+          image: require('../assets/images/chicken/aeropuerto.png'),
+          title: 'Aeropuerto',
+          price: '$19.99',
+          description: 'Sauteed chicken w/ green onions, french fries w/ fried rice, noodles & eggs.'
+        },
+        {
+          image: require('../assets/images/chicken/pollo-a-la-brasa.png'),
+          title: 'Pollo Entero',
+          price: '$29.99',
+          description: 'Whole rotisserie chicken served w/ fries & salad'
+        },
+        {
+          image: require('../assets/images/chicken/pollo-a-la-brasa.png'),
           title: '1/2 Pollo',
           price: '$12.49',
-          description: '1/2 rotisserie chicken served with fries & salad'
+          description: '1/2 rotisserie chicken served w/ fries & salad'
         },
         {
-          image: 'images/menu/chicken/one-fourth-pollo-a-la-brasa/IMG_6623.JPG',
+          image: require('../assets/images/chicken/pollo-a-la-brasa.png'),
           title: '1/4 Pollo',
           price: '$6.99',
-          description: '1/4 rotisserie chicken served with fries & salad'
+          description: '1/4 rotisserie chicken served w/ fries & salad'
         }
     ],
     meats: [
       {
-        image: 'images/menu/meats/aereopuerto/IMG_6481.JPG',
-        title: 'Aereopuerto',
-        price: '$11.85',
-        description: 'Sauteed chicken with green onions, french fries with fried rice, noodles & eggs.'
+        image: require('../assets/images/meats/chaufa-mixto.png'),
+        title: 'Chaufa Mixto',
+        price: '$20.85',
+        description: 'Fried Rice, beef & chicken bell peppers, eggs & green onions.'
       },
       {
-        image: 'images/menu/meats/arroz-chaufa/IMG_6426.JPG',
-        title: 'Arroz Chaufa',
-        price: '$10.85',
-        description: 'Fried rice with beef, bell pepper green onions & eggs.'
-      },
-      {
-        image: 'images/menu/meats/bistek-a-lo-pobre/IMG_6494.JPG',
-        title: 'Bistek A Lo Pobre',
-        price: '$12.99',
-        description: 'Grilled steak served with rice, french fries, fried egg & fried plantains.'
-      },
-      {
-        image: 'images/menu/meats/chaufa-especial/IMG_6445.JPG',
-        title: 'Chaufa Especial',
-        price: '$13.85',
-        description: 'Fried rice, chicken, beef, shrimp, bell pepper & green onions.'
-      },
-      {
-        image: 'images/menu/meats/churrasco/IMG_6498.JPG',
-        title: 'Churrasco',
-        price: '$13.99',
-        description: 'Peruvian style steak served with french fries, steamed rice.'
-      },
-      {
-        image: 'images/menu/meats/lomo-saltado-mixto/IMG_6691.JPG',
-        title: 'Lomo Saltado Mixto',
-        price: '$11.99',
-        description: 'Sauteed beef & chicken with tomatoe & onions over french fries with rice.'
-      },
-      {
-        image: 'images/main-images/parrillada-de-la-casa.png',
-        title: 'Parrillada De La Casa',
-        price: '$25.85',
-        description: 'Grilled beef, beef heart, chicken, sausage, shrimps and a 1/4 chicken served with rice, salad, & french fries.'
-      },
-      {
-        image: 'images/menu/meats/seco-a-la-nortena/IMG_6673.JPG',
-        title: 'Seco A La Norteña',
-        price: '$11.85',
-        description: 'Beef stew cooked with cilantro based red sauce, served with beans potato & steamed rice.'
-      },
-      {
-        image: 'images/menu/meats/seco-de-res/IMG_6553.JPG',
+        image: require('../assets/images/meats/seco-de-res.png'),
         title: 'Seco De Res',
-        price: '$10.85',
-        description: 'Beef stew cooked with cilantro based red sauce, served with Peruvian beans potatoes & steamed rice.'
+        price: '$21.00',
+        description: 'Beef stew cooked w/ cilantro based red sauce, served w/ Peruvian beans, potatoes & steamed rice.'
       },
       {
-        image: 'images/menu/meats/tacutacu/IMG_6604.JPG',
+        image: require('../assets/images/meats/bistek-a-lo-pobre.png'),
+        title: 'Bistek A Lo Pobre',
+        price: '$20.99',
+        description: 'Grilled steak serve'
+      },
+      {
+        image: require('../assets/images/meats/tacutacu.png'),
         title: 'Tacutacu',
-        price: '$13.95',
-        description: 'Mixed beans and rice, sauteed beef with tomato & onions over french fries.'
+        price: '$23.00',
+        description: 'Mixed beans and rice sauteed beef w/ tomatoes & onions over french fries.'
       },
       {
-        image: 'images/menu/meats/tallarin-saltado/IMG_6455.JPG',
+        image: require('../assets/images/meats/parrillada-de-la-casa.png'),
+        title: 'Parrillada De La Casa',
+        price: '$34.99',
+        description: 'Grilled beef, beef heart, chicken, sausage, shrimps and a 1/4 chicken served w/ rice, salad, & french fries.'
+      },
+      {
+        image: require('../assets/images/meats/churrasco.png'),
+        title: 'Churrasco',
+        price: '$22.99',
+        description: 'Peruvian style steak served w/ french fries, one fried egg & fried plantain.'
+      },
+      {
+        image: require('../assets/images/meats/tallarin-saltado.png'),
         title: 'Tallarin Saltado',
-        price: '$10.85',
-        description: 'Spaghetti with sauteed beef strips, onions, tomato & bell peppers.'
+        price: '$20.99',
+        description: 'Spaghetti w/ sauteed beef strips or chicken, scallons, tomato red onions & bell peppers.'
       },
       {
-        image: 'images/menu/meats/tallarin-saltado-mixto/IMG_6489.JPG',
+        image: require('../assets/images/meats/arroz-chaufa.png'),
+        title: 'Arroz Chaufa',
+        price: '$20.99',
+        description: 'Fried rice w/ beef or chicken, bell peppers, green onions & eggs.'
+      },
+      {
+        image: require('../assets/images/meats/tallarin-saltado-mixto.png'),
         title: 'Tallarin Saltado Mixto',
-        price: '$11.85',
-        description: 'Pasta sauteed with chicken strip, and beef onions tomatoes & peppers.'
+        price: '$21.80',
+        description: 'Pasta sauteed w/ chicken strip, beef, onions, tomatoes & peppers.'
+      },
+      {
+        image: require('../assets/images/meats/lomo-saltado-mixto.png'),
+        title: 'Lomo Saltado Mixto',
+        price: '$21.99',
+        description: 'Stir fry beef & chicken w/ tomatoes, onions, over french fries w/ rice.'
+      },
+      {
+        image: require('../assets/images/meats/chaufa-especial.png'),
+        title: 'Chaufa Especial',
+        price: '$22.99',
+        description: 'Fried rice, chicken, beef, shrimp, eggs, bell peppers & green onions.'
       }
     ],
     seafoods: [
       {
-        image: 'images/menu/seafood/ceviche-mixto/IMG_6394.JPG',
-        title: 'Ceviche Mixto',
-        price: '$14.25',
-        description: 'Fish & seafood in lime juice with onions, sweet potato and Peruvian corn.'
-      },
-      {
-        image: 'images/menu/seafood/ceviche-pescado/IMG_6384.JPG',
-        title: 'Ceviche',
-        price: '$12.25',
-        description: 'Fish cooked in lime juice, with onions, and sweet potato and Peruvian corn.'
-      },
-      {
-        image: 'images/menu/seafood/chaufa-a-lo-macho/IMG_6685.JPG',
-        title: 'Chaufa A Lo Macho',
-        price: '$14.85',
-        description: 'Fried rice with seafood and Seafood sauce.'
-      },
-      {
-        image: 'images/menu/seafood/chaufa-de-mariscos/IMG_6414.JPG',
-        title: 'Chaufa De Mariscos',
-        price: '$13.85',
-        description: 'Seafood fried rice with bell pepper green onions & eggs.'
-      },
-      {
-        image: 'images/menu/seafood/chaufa-de-pescado/IMG_6638.JPG',
-        title: 'Chaufa De Pescado',
-        price: '$11.85',
-        description: 'Fried rice with fish, bell pepper, green onions & eggs.'
-      },
-      {
-        image: 'images/menu/seafood/chicharron-de-pescado/IMG_6409.JPG',
+        image: require('../assets/images/seafood/chicharron-de-pescado.png'),
         title: 'Chicharron De Pescado',
-        price: '$10.85',
-        description: 'Deep fried fish with rice, served with fried yucca and red onions.'
+        price: '$19.99',
+        description: 'Deep fried fish w/ rice, served with fried yucca, salsa and red onions.'
       },
       {
-        image: 'images/menu/seafood/escabeche-de-pescado/IMG_6592.JPG',
+        image: require('../assets/images/seafood/pescado-frito.png'),
+        title: 'Pescado Frito',
+        price: '$19.99',
+        description: 'Fried fish served w/ rice, yucca & salsa.'
+      },
+      {
+        image: require('../assets/images/seafood/ceviche-con-calamares.png'),
+        title: 'Ceviche con Calamares',
+        price: '$23.00',
+        description: 'Fish cooked in lime juice and fried calamari, w/ sweet potatoe, and Peruvian corn.'
+      },
+      {
+        image: require('../assets/images/seafood/escabeche-de-pescado.png'),
         title: 'Escabeche De Pescado',
-        price: '$11.99',
-        description: 'Fish sauteed with Peruvian sauce onions served with rice.'
+        price: '$18.99',
+        description: 'Fish sauteed w/ Peruvian sauce, onions served with rice.'
       },
       {
-        image: 'images/menu/seafood/jalea/IMG_6374.JPG',
-        title: 'Jalea',
-        price: '$13.99',
-        description: 'Deep fried fish & seafood topped with sweet onions, salsa & yucca.'
+        image: require('../assets/images/seafood/pescado-a-la-plancha.png'),
+        title: 'Pescado A La Plancha',
+        price: '$19.99',
+        description: 'Grilled fish, served with rice, Fried yucca and onions.'
       },
       {
-        image: 'images/menu/seafood/leche-de-tigre/IMG_6518.JPG',
+        image: require('../assets/images/seafood/chaufa-de-mariscos-con-ceviche.png'),
+        title: 'Chaufa De Mariscos Con Ceviche',
+        price: '$28.00',
+        description: 'Fried rice seafood cooked with scallions and peppers w/ ceviceh.'
+      },
+      {
+        image: require('../assets/images/seafood/leche-de-tigre-con-calamares.png'),
+        title: 'Leche De Tigre Con Calamares',
+        price: '$22.99',
+        description: 'Leche de tigre and fried calamari.'
+      },
+      {
+        image: require('../assets/images/seafood/ceviche.png'),
+        title: 'Ceviche',
+        price: '$20.00',
+        description: 'Fish cooked in lime juice w/ onions, sweet potato and Peruvian corn.'
+      },
+      {
+        image: require('../assets/images/seafood/ceviche-mixto.png'),
+        title: 'Ceviche Mixto',
+        price: '$22.00',
+        description: 'Seafood in lime juice w/ onions, sweet potato and Peruvian corn.'
+      },
+      {
+        image: require('../assets/images/seafood/leche-de-tigre.png'),
         title: 'Leche De Tigre',
-        price: '$10.25',
+        price: '$16.00',
         description: 'Fish cooked in lime juice, sweet potatoe, shrimp, onion, and Peruvian corn.'
       },
       {
-        image: 'images/menu/seafood/pescado-a-lo-macho/IMG_6667.JPG',
-        title: 'Pescado A Lo Macho',
-        price: '$14.85',
-        description: 'Fried fish topped with seafood sauce served with steamed rice.'
+        image: require('../assets/images/seafood/ceviche-de-camarones.png'),
+        title: 'Ceviche De Camarones',
+        price: '$22.99',
+        description: 'Shrimp in lime juice w/ onions, sweet potatoes and Peruvian corn.'
       },
       {
-        image: 'images/menu/seafood/pescado-frito/IMG_6369.JPG',
-        title: 'Pescado Frito',
-        price: '$11.99',
-        description: 'Fried fish served with rice, yucca & salsa.'
-      },
-      {
-        image: 'images/menu/seafood/picante-de-mariscos/IMG_6661.JPG',
+        image: require('../assets/images/seafood/picante-de-mariscos.png'),
         title: 'Picante De Mariscos',
-        price: '$14.25',
-        description: 'Seafood with spicy sauce served with potatoes & steamed rice.'
+        price: '$20.80',
+        description: 'Seafood served w/ potatoes, green beans, carots, steamed rice topped w/ seafood sauce.'
       },
       {
-        image: 'images/menu/seafood/sudado-de-pescado/IMG_6577.JPG',
-        title: 'Sudado De Pescado',
-        price: '$11.99',
-        description: 'Steamed fish fillet with red onion, tomato peruvian sauce & rice.'
+        image: require('../assets/images/seafood/pescado-a-la-chorrillana.png'),
+        title: 'Pescado A La Chorrillana',
+        price: '$19.85',
+        description: 'Grilled fish w/ rice, served w/ steam sweet potatoe, and red onions tomatoes, yellow pepper.'
+      },
+      {
+        image: require('../assets/images/seafood/pescado-a-lo-macho.png'),
+        title: 'Pescado A Lo Macho',
+        price: '$22.00',
+        description: 'Fried fish topped w/ seafood sauce served w/ steamed rice.'
+      },
+      {
+        image: require('../assets/images/seafood/chaufa-de-mariscos.png'),
+        title: 'Chaufa De Mariscos',
+        price: '$21.99',
+        description: 'Seafood fried rice w/ bell pepper, green onions & eggs.'
+      },
+      {
+        image: require('../assets/images/seafood/chaufa-de-pescado.png'),
+        title: 'Chaufa De Pescado',
+        price: '$18.99',
+        description: 'Fried rice w/ fish, bell peppers, green onions & eggs.'
+      },
+      {
+        image: require('../assets/images/seafood/chaufa-a-lo-macho.png'),
+        title: 'Chaufa A Lo Macho',
+        price: '$22.80',
+        description: 'Fried rice w/ seafood and Seafood sauce.'
+      },
+      {
+        image: require('../assets/images/seafood/tacutacu-de-mariscos.png'),
+        title: 'Tacutacu De Mariscos',
+        price: '$22.85',
+        description: 'Mixed beans and rice w/ sauteed seafood.'
+      },
+      {
+        image: require('../assets/images/seafood/tallarines-a-lo-macho.png'),
+        title: 'Tallarines A Lo Macho',
+        price: '$21.90',
+        description: 'Spaghetti w/ seafood and seafood sauce.'
+      },
+      {
+        image: require('../assets/images/seafood/jalea.png'),
+        title: 'Jalea',
+        price: '$23.80',
+        description: 'Deep fried fish & seafood topped w/ red onions, salsa, peruvian corn & yucca.'
+      }
+    ],
+    vegetarian: [
+      {
+        image: require('../assets/images/vegetarian/chaufa-con-verduras.png'),
+        title: 'Chaufa Con Verduras',
+        price: '$17.99',
+        description: 'Fried rice w/ sauteed vegetables, scallions, tomato, red onions, bell peppers, green pea, bean sprout and carrots.'
+      },
+      {
+        image: require('../assets/images/vegetarian/tallarines-con-verduras.png'),
+        title: 'Tallarines Con Verduras',
+        price: '$17.99',
+        description: 'Spaguetti w/ sauteed vegetables, scallions, tomato, red onions, bell peppers, green pea, bean sprout and carrots.'
       }
     ],
     appetizers: [
       {
-        image: 'images/menu/appetizers/anticuchos/IMG_6558.JPG',
+        image: require('../assets/images/appetizers/papa-a-la-huancaina.png'),
+        title: 'Papa La Huancaina',
+        price: '$13.00',
+        description: 'Sliced potatoes with traditional Peruvian sauce made w/ yellow chillis.'
+      },
+      {
+        image: require('../assets/images/appetizers/anticuchos.png'),
         title: 'Anticuchos',
-        price: '$8.99',
-        description: 'Peruvian style kabobs beef heart served with deep fried potatoes & corn.'
+        price: '$15.00',
+        description: 'Peruvian style kabobs beef heart, served w/ deep fried potatoes, corn & huancaina sauce.'
       },
       {
-        image: 'images/menu/appetizers/causa-rellena/IMG_6511.JPG',
+        image: require('../assets/images/appetizers/causa-rellena.png'),
         title: 'Causa Rellena',
-        price: '$7.85',
-        description: 'Peruvian dish, made of creamy mashed potatoes with chicken, tuna or shrimp.'
-      },
-      {
-        image: 'images/menu/appetizers/choclo-con-queso/IMG_6477.JPG',
-        title: 'Choclo Con Queso',
-        price: '$4.99',
-        description: 'Peruvian corn, served with slices of fresh cheese.'
-      },
-      {
-        image: 'images/menu/appetizers/choros-a-la-chalaca/IMG_6399.JPG',
-        title: 'Choros A La Chalaca',
         price: '$9.85',
-        description: 'Fresh mussels served in the shell with sweet onions, tomato & lime.'
+        description: 'Peruvian dish, made of creamy mashed potatoes w/ chicken, tuna or shrimp.'
       },
       {
-        image: 'images/menu/appetizers/papa-la-huancaina/IMG_6389.JPG',
-        title: 'Papa A La Huancaina',
-        price: '$6.55',
-        description: 'Sliced potatoes with traditional Peruvian sauce made with yellow chillis.'
-      },
-      {
-        image: 'images/menu/appetizers/papa-rellena/IMG_6530.JPG',
+        image: require('../assets/images/appetizers/papa-rellena.png'),
         title: 'Papa Rellena',
-        price: '$5.99',
-        description: 'Fried mashed potato stuffed with mixture of seasoned steak, eggs, raisins & olives.'
+        price: '$9.85',
+        description: 'Fried mashed potato stuffed w/ mixture of seasoned steak, eggs, raisins & olives.'
       },
       {
-        image: 'images/menu/appetizers/salchipapas/IMG_6544.JPG',
-        title: 'Salchipapas',
-        price: '$4.99',
-        description: 'Deep fried hot dogs sliced over fries.'
+        image: require('../assets/images/appetizers/chicken-nuggets.png'),
+        title: 'Chicken Nuggets',
+        price: '$10.80',
+        description: ''
       },
       {
-        image: 'images/menu/appetizers/yuca-frita/IMG_6484.JPG',
-        title: 'Yuca Frita',
-        price: '$6.85',
-        description: 'Deep fried yuca served with traditional Peruvian sauce.'
+        image: require('../assets/images/appetizers/choros-a-la-chalaca.png'),
+        title: 'Choros A La Chalaca',
+        price: '$18.00',
+        description: 'Fresh mussels served in the shell w/ sweet onions, tomato & lime.'
+      },      
+      {
+        image: require('../assets/images/appetizers/salchipapa-con-huevo-y-ensalada.png'),
+        title: 'Salchipapa Con Huevo Y Ensalada',
+        price: '$13.85',
+        description: 'Deep fried sliced hot dogs over french fries. Fried egg and salad.'
+      },
+      {
+        image: require('../assets/images/appetizers/yucca-frita.png'),
+        title: 'Yucca Frita',
+        price: '$12.00',
+        description: 'Deep fried yuca served w/ traditional huancaina sauce.'
       }
     ],
     soups: [
       {
-        image: 'images/menu/soups/caldo-de-gallina/IMG_6597.JPG',
-        title: 'Caldo De Gallina',
-        price: '$10.99',
-        description: 'Chicken soup with spaguetti noodles, vegetables & potatoes.'
+        image: require('../assets/images/soups/chupe-de-camarones.png'),
+        title: 'Chupe De Camarones',
+        price: '$20.50',
+        description: 'Creamy shrimp soup mixed w/ rice & potatoes.'
       },
       {
-        image: 'images/menu/soups/chupe-de-mariscos/IMG_6633.JPG',
-        title: 'Chupe De Mariscos',
-        price: '$13.55',
-        description: 'Creamy shrimp soup mixed with rice Potatoes & vegetables.'
+        image: require('../assets/images/soups/sopa-a-la-minuta.png'),
+        title: 'Sopa A La Minuta',
+        price: '$19.85',
+        description: 'Creamy soup with meat, milk, angel hair noodles & potatoes.'
       },
       {
-        image: 'images/menu/soups/chupe-de-pescado/IMG_6627.JPG',
-        title: 'Chupe De Pescado',
-        price: '$12.25',
-        description: 'Creamy fish soup mixed with rice & vegetables.'
-      },
-      {
-        image: 'images/menu/soups/parihuela-de-mariscos/IMG_6570.JPG',
+        image: require('../assets/images/soups/parihuela-de-mariscos.png'),
         title: 'Parihuela De Mariscos',
-        price: '$13.55',
+        price: '$20.80',
         description: 'Peruvian seafood soup.'
       },
       {
-        image: 'images/menu/soups/sopa-a-la-criolla/IMG_6535.JPG',
-        title: 'Sopa A La Criolla',
-        price: '$9.99',
-        description: 'Creamy soup with meat, vegetables, noodles, eggs and potatoes.'
-      },
-      {
-        image: 'images/menu/soups/sopa-a-la-minuta/IMG_6549.JPG',
-        title: 'Sopa A La Minuta',
-        price: '$9.85',
-        description: 'Creamy soup with meat, milk, angel hair noodles and potatoes.'
-      },
-      {
-        image: 'images/menu/soups/sopa-de-choros/IMG_6619.JPG',
+        image: require('../assets/images/soups/sopa-de-choros.png'),
         title: 'Sopa De Choros',
-        price: '$11.85',
-        description: 'Peruvian mixed soup with noodles.'
+        price: '$19.00',
+        description: 'Peruvian mussels soup w/ noodles.'
+      },
+      {
+        image: require('../assets/images/soups/aguadito-de-mariscos-o-pezcado.png'),
+        title: 'Aguadito De Mariscos O Pescado',
+        price: '$20.90',
+        description: 'Seafood, rice, bell pepper, green pee and cilantro.'
+      },
+      {
+        image: require('../assets/images/soups/caldo-de-gallina.png'),
+        title: 'Caldo De Gallina',
+        price: '$22.99',
+        description: 'Chicken soup w/ spaghetti noodles, one egg & potatoes.'
+      },
+      {
+        image: require('../assets/images/soups/aguadito-de-pollo.png'),
+        title: 'Aguadito De Pollo',
+        price: '$19.99',
+        description: 'Chicken, rice, bell pepper, green pee and cilantro.'
+      },
+      {
+        image: require('../assets/images/soups/chupe-de-pescado.png'),
+        title: 'Chupe De Pescado',
+        price: '$19.00',
+        description: 'Creamy fish soup mixed w/ rice.'
+      }
+    ],
+    house_specialties: [
+      {
+        image: require('../assets/images/house-specialties/seco-a-la-nortena.png'),
+        title: 'Seco A La Norteña',
+        price: '$20.50',
+        description: 'Beef stew cooked w/ cilantro based, red sauce, served w/ beans, yucca & steam rice.'
+      },
+      {
+        image: require('../assets/images/house-specialties/lomo-saltado.png'),
+        title: 'Lomo Saltado',
+        price: '$21.99',
+        description: 'Sauteed beef or chicken w/ tomato & onions over french fries w/ rice.'
+      },
+      {
+        image: require('../assets/images/house-specialties/ceviche-de-la-casa.png'),
+        title: 'Ceviche De La Casa',
+        price: '$21.80',
+        description: 'Fish cooked w/ lime juice, sliced fish, yellow chili sauce, fried fish & seafood mix with peruvian style rice.'
+      },
+      {
+        image: require('../assets/images/house-specialties/arroz-con-mariscos.png'),
+        title: 'Arroz Con Mariscos',
+        price: '$21.80',
+        description: 'Seafood mixed w/ Peruvian rice style.'
+      },
+      {
+        image: require('../assets/images/house-specialties/arroz-con-pollo.png'),
+        title: 'Arroz Con Pollo',
+        price: '$19.99',
+        description: 'Chicken thighs or chicken breast with green rice and huancaina sauce.'
+      },
+      {
+        image: require('../assets/images/house-specialties/tallarin-saltado-de-mariscos.png'),
+        title: 'Tallarin Saltado De Mariscos',
+        price: '$19.80',
+        description: 'Spaghetti w/ sauteed seafood mix, onions, tomato & shell peppers.'
+      },
+      {
+        image: require('../assets/images/house-specialties/tallarines-verdes.png'),
+        title: 'Tallarines Verdes',
+        price: '$22.00',
+        description: 'Green spaguetti sauteed in spinach, basil sauce, topped w/ grilled steak & deep fried potatoes.'
+      }
+    ],
+    desserts: [
+      {
+        image: require('../assets/images/desserts/rice-pudding.png'),
+        title: 'Arroz Con Leche',
+        price: '$10.99',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Mazamorra Morada',
+        price: '$9.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Fried Plantains',
+        price: '$3.50',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Helado De Lucuma',
+        price: '$8.00',
+        description: 'Peruvian Ice Cream'
+      },
+      {
+        image: require('../assets/images/desserts/rice-pudding.png'),
+        title: 'Leche Asada',
+        price: '$8.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Alfajor',
+        price: '$10.00',
+        description: ''
+      }
+    ],
+    side_orders: [
+      {
+        image: "",
+        title: 'Salsa Huancaina',
+        price: '$4.50',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Rice, Beans, Salad, French Fries',
+        price: '$8.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Bisteck Extra, Loma Extra',
+        price: '$10.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Extra Chaufa',
+        price: '$9.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Toasted Peruvian Corn',
+        price: '$9.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Salsa Tartara',
+        price: '$4.50',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Ensalada Criolla',
+        price: '$6.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Salsa Verde',
+        price: '$2.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Dressing',
+        price: '$2.00',
+        description: ''
+      }
+    ],
+    drinks: [
+      {
+        image: require('../assets/images/drinks/chicha-morada.png'),
+        title: 'Chicha Morada Jarra',
+        price: '$10.00',
+        description: ''
+      },
+      {
+        image: require('../assets/images/drinks/maracuya.png'),
+        title: 'Maracuya Jarra',
+        price: '$10.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Chicha Morada Vaso',
+        price: '$4.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Maracuya Vaso',
+        price: '$4.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Inka Kola Grande',
+        price: '$8.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Inka Kola Chica',
+        price: '$3.50',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Cafe/Tea',
+        price: '$2.50',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Soft Drink',
+        price: '$3.00',
+        description: 'Sprite, Coke, Diet Coke, Dr. Pepper, Raspberry Iced tea, Fanta, Lemonade'
+      },
+      {
+        image: "",
+        title: 'Coca De Botella',
+        price: '$4.00',
+        description: ''
+      },
+      {
+        image: "",
+        title: 'Inka Kola 20 OZ.',
+        price: '$4.00',
+        description: ''
       }
     ]
-    }
+  }
   },
   methods:{
     chickenClicked: function(){
@@ -506,7 +762,7 @@ export default {
     max-width: 180px;
     margin-right: 30px;
     border-radius: 50px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     padding: 3px;
   }
 
@@ -621,7 +877,7 @@ export default {
     }
 
     .menu-item h4{
-      font-size: 19px;
+      font-size: 17px;
     }
 
     .menu-item img{
