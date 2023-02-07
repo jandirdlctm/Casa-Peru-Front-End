@@ -314,7 +314,7 @@ export default {
         image: require('../assets/images/seafood/chaufa-de-mariscos-con-ceviche.png'),
         title: 'Chaufa De Mariscos Con Ceviche',
         price: '$28.00',
-        description: 'Fried rice seafood cooked with scallions and peppers w/ ceviceh.'
+        description: 'Fried rice seafood cooked with scallions and peppers w/ ceviche.'
       },
       {
         image: require('../assets/images/seafood/leche-de-tigre-con-calamares.png'),
