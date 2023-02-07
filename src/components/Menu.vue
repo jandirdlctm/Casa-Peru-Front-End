@@ -8,9 +8,15 @@
         <button @click="chickenClicked" class="menu-btn" type="button" name="button">CHICKEN</button>
         <button @click="meatsClicked" class="menu-btn" type="button" name="button">MEATS</button>
         <button @click="seafoodsClicked" class="menu-btn" type="button" name="button">SEAFOOD</button>
-        <button @click="appetizersClicked" class="menu-btn" type="button" name="button">APPETIZERS</button>
+        <button @click="specialtiesClicked" class="menu-btn" type="button" name="button">SPECIALTIES</button>
         <button @click="soupsClicked" class="menu-btn" type="button" name="button">SOUPS</button>
+        <button @click="vegetariansClicked" class="menu-btn" type="button" name="button">VEGETARIAN</button>
+        <button @click="appetizersClicked" class="menu-btn" type="button" name="button">APPETIZERS</button>        
+        <button @click="sidesClicked" class="menu-btn" type="button" name="button">SIDES</button>
+        <button @click="dessertsClicked" class="menu-btn" type="button" name="button">DESSERTS</button>
+        <button @click="drinksClicked" class="menu-btn" type="button" name="button">DRINKS</button>
       </div>
+
         <div v-if="showChicken" class="wrapper-menu">
           <div  v-for="food in chicken" v-bind:key="food"  class="menu-item">
             <img :src="food.image">
@@ -20,6 +26,7 @@
             </div>
           </div>
         </div>
+
         <div v-if="showMeats" class="wrapper-menu">
           <div  v-for="food in meats" v-bind:key="food"  class="menu-item">
             <img :src="food.image">
@@ -29,6 +36,7 @@
             </div>
           </div>
         </div>
+
         <div v-if="showSeafoods" class="wrapper-menu">
           <div  v-for="food in seafoods" v-bind:key="food"  class="menu-item">
             <img :src="food.image">
@@ -38,8 +46,9 @@
             </div>
           </div>
         </div>
-        <div v-if="showAppetizers" class="wrapper-menu">
-          <div  v-for="food in appetizers" v-bind:key="food"  class="menu-item">
+
+        <div v-if="showSpecialties" class="wrapper-menu">
+          <div  v-for="food in house_specialties" v-bind:key="food"  class="menu-item">
             <img :src="food.image">
             <div class="body-menu">
               <h4>{{food.title}} <span> {{food.price}}</span></h4>
@@ -47,6 +56,7 @@
             </div>
           </div>
         </div>
+
         <div v-if="showSoups" class="wrapper-menu">
           <div  v-for="food in soups" v-bind:key="food"  class="menu-item">
             <img :src="food.image">
@@ -56,6 +66,57 @@
             </div>
           </div>
         </div>
+
+        <div v-if="showVegetarians" class="wrapper-menu">
+          <div  v-for="food in vegetarian" v-bind:key="food"  class="menu-item">
+            <img :src="food.image">
+            <div class="body-menu">
+              <h4>{{food.title}} <span> {{food.price}}</span></h4>
+              <p>{{food.description}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div v-if="showAppetizers" class="wrapper-menu">
+          <div  v-for="food in appetizers" v-bind:key="food"  class="menu-item">
+            <img :src="food.image">
+            <div class="body-menu">
+              <h4>{{food.title}} <span> {{food.price}}</span></h4>
+              <p>{{food.description}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div v-if="showSides" class="wrapper-menu">
+          <div  v-for="food in side_orders" v-bind:key="food"  class="menu-item">
+            <img :src="food.image">
+            <div class="body-menu">
+              <h4>{{food.title}} <span> {{food.price}}</span></h4>
+              <p>{{food.description}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div v-if="showDesserts" class="wrapper-menu">
+          <div  v-for="food in desserts" v-bind:key="food"  class="menu-item">
+            <img :src="food.image">
+            <div class="body-menu">
+              <h4>{{food.title}} <span> {{food.price}}</span></h4>
+              <p>{{food.description}}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div v-if="showDrinks" class="wrapper-menu">
+          <div  v-for="food in drinks" v-bind:key="food"  class="menu-item">
+            <img :src="food.image">
+            <div class="body-menu">
+              <h4>{{food.title}} <span> {{food.price}}</span></h4>
+              <p>{{food.description}}</p>
+            </div>
+          </div>
+        </div>
+
     </div>
   </section>
 
@@ -70,7 +131,12 @@ export default {
       showMeats: false,
       showSeafoods : false,
       showAppetizers : false,
+      showSpecialties: false,
       showSoups : false,
+      showVegetarians: false,
+      showSides: false,
+      showDesserts: false,
+      showDrinks: false,
       chicken: [
         {
           image: require('../assets/images/chicken/arroz-con-pato.png'),
@@ -519,7 +585,7 @@ export default {
         description: 'Peruvian Ice Cream'
       },
       {
-        image: require('../assets/images/desserts/rice-pudding.png'),
+        image: "",
         title: 'Leche Asada',
         price: '$8.00',
         description: ''
@@ -658,6 +724,11 @@ export default {
       this.showSeafoods = false;
       this.showAppetizers = false;
       this.showSoups = false;
+      this.showSpecialties = false;
+      this.showVegetarians = false;
+      this.showSides = false;
+      this.showDesserts = false;
+      this.showDrinks = false;
     },
     meatsClicked: function(){
       this.showChicken = false;
@@ -665,6 +736,11 @@ export default {
       this.showSeafoods = false;
       this.showAppetizers = false;
       this.showSoups = false;
+      this.showSpecialties = false;
+      this.showVegetarians = false;
+      this.showSides = false;
+      this.showDesserts = false;
+      this.showDrinks = false;
     },
     seafoodsClicked: function(){
       this.showChicken = false;
@@ -672,6 +748,11 @@ export default {
       this.showSeafoods = true;
       this.showAppetizers = false;
       this.showSoups = false;
+      this.showSpecialties = false;
+      this.showVegetarians = false;
+      this.showSides = false;
+      this.showDesserts = false;
+      this.showDrinks = false;
     },
     appetizersClicked: function(){
       this.showChicken = false;
@@ -679,15 +760,84 @@ export default {
       this.showSeafoods = false;
       this.showAppetizers = true;
       this.showSoups = false;
+      this.showSpecialties = false;
+      this.showVegetarians = false;
+      this.showSides = false;
+      this.showDesserts = false;
+      this.showDrinks = false;
     },
     soupsClicked: function(){
-      console.log("meats clicked");
       this.showChicken = false;
       this.showMeats = false;
       this.showSeafoods = false;
       this.showAppetizers = false;
       this.showSoups = true;
-    }
+      this.showSpecialties = false;
+      this.showVegetarians = false;
+      this.showSides = false;
+      this.showDesserts = false;
+      this.showDrinks = false;
+    },
+    specialtiesClicked: function(){
+      this.showChicken = false;
+      this.showMeats = false;
+      this.showSeafoods = false;
+      this.showAppetizers = false;
+      this.showSoups = false;
+      this.showSpecialties = true;
+      this.showVegetarians = false;
+      this.showSides = false;
+      this.showDesserts = false;
+      this.showDrinks = false;
+    },
+    vegetariansClicked: function(){
+      this.showChicken = false;
+      this.showMeats = false;
+      this.showSeafoods = false;
+      this.showAppetizers = false;
+      this.showSoups = false;
+      this.showSpecialties = false;
+      this.showVegetarians = true;
+      this.showSides = false;
+      this.showDesserts = false;
+      this.showDrinks = false;
+    },
+    sidesClicked: function(){
+      this.showChicken = false;
+      this.showMeats = false;
+      this.showSeafoods = false;
+      this.showAppetizers = false;
+      this.showSoups = false;
+      this.showSpecialties = false;
+      this.showVegetarians = false;
+      this.showSides = true;
+      this.showDesserts = false;
+      this.showDrinks = false;
+    },
+    dessertsClicked: function(){
+      this.showChicken = false;
+      this.showMeats = false;
+      this.showSeafoods = false;
+      this.showAppetizers = false;
+      this.showSoups = false;
+      this.showSpecialties = false;
+      this.showVegetarians = false;
+      this.showSides = false;
+      this.showDesserts = true;
+      this.showDrinks = false;
+    },
+    drinksClicked: function(){
+      this.showChicken = false;
+      this.showMeats = false;
+      this.showSeafoods = false;
+      this.showAppetizers = false;
+      this.showSoups = false;
+      this.showSpecialties = false;
+      this.showVegetarians = false;
+      this.showSides = false;
+      this.showDesserts = false;
+      this.showDrinks = true;
+    },
   },
 }
 </script>
@@ -743,6 +893,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 3rem;
   }
 
   .menu-item{
@@ -799,7 +950,8 @@ export default {
     cursor: pointer;
     border: .2rem solid white;
     margin-right: 3rem;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
+    margin-bottom: 0.5rem;
     color: white;
   }
 
@@ -890,10 +1042,16 @@ export default {
     }
 
     .menu-btn{
-      margin-bottom: 0.5rem;
+      margin-bottom: -0.7rem;
       margin-right: 2rem;
+      width: 58px;
+      font-size: 6px;
     }
-
+  }
+  @media (max-width: 375px){
+    .body-menu{
+      width: 308px
+    }
   }
 
   @media (max-width: 360px){
@@ -902,7 +1060,27 @@ export default {
       margin: -11px;
       margin-bottom: 18px;
     }
-
+    .body-menu{
+      width: 308px
+    }
+    .menu-item h4{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 351px){
+    .body-menu{
+      width: 308px
+    }
+  }
+  @media (max-width: 335px){
+    .body-menu{
+      width: 296px
+    }
+  }
+  @media (max-width: 320px){
+    .body-menu{
+      width: 280px
+    }
   }
 
 </style>
