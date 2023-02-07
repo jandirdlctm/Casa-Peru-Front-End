@@ -135,13 +135,13 @@ export default {
         {
           image: require('../assets/images/chicken/pollo-a-la-brasa.png'),
           title: '1/2 Pollo',
-          price: '$12.49',
+          price: '$19.99',
           description: '1/2 rotisserie chicken served w/ fries & salad'
         },
         {
           image: require('../assets/images/chicken/pollo-a-la-brasa.png'),
           title: '1/4 Pollo',
-          price: '$6.99',
+          price: '$12.00',
           description: '1/4 rotisserie chicken served w/ fries & salad'
         }
     ],
