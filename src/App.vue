@@ -4,7 +4,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <header>
-      <a href="/" class="casa-peru-logo"><img src="./assets/new_logo_2.png"></a>
+      <a href="/" class="casa-peru-logo"><img src="./assets/kelsey_jan_logo.png"></a>
 
       <Slide right :closeOnNavigation="true">
           <a class="nav-link"><router-link to="/">Home</router-link></a>
