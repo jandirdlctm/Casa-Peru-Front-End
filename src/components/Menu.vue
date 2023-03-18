@@ -443,8 +443,8 @@ export default {
       {
         image: require('../assets/images/appetizers/salchipapas.png'),
         title: 'Salchipapas',
-        price: '$9.85',
-        description: 'Fried mashed potato stuffed w/ mixture of seasoned steak, eggs, raisins & olives.'
+        price: '$6.99',
+        description: 'Deep fried sliced hot dogs over french fries.'
       },
       {
         image: require('../assets/images/appetizers/chicken-nuggets.png'),
