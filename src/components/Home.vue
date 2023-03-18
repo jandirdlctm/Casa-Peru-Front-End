@@ -5,7 +5,10 @@
         <h3>CASA PERU IS WAITING FOR YOU TO EXPERIENCE THE BEST OF PERUVIAN CUISINE</h3>
         <p>Since 2015 Casa Peru Restaurant is one of the most popular peruvian cuisine restaurants in the Salt Lake City area, our goal is to make our customers feel at home and deliver the best experience possible.</p>
         <a href="https://www.clover.com/online-ordering/casa-peru-west-valley-city" target="_blank"><button class="order-btn">ORDER NOW</button></a>
-        <a href="./menu"><button class="view-menu-btn">VIEW MENU</button></a>
+        <!-- <a href="./menu"><button class="view-menu-btn">VIEW MENU</button></a> -->
+        <a ><router-link to="/menu"><button class="view-menu-btn">VIEW MENU</button></router-link></a>
+        <!-- <router-link to="/menu"></router-link> -->
+        <!-- <a class="nav-link"><router-link to="/menu">Menu</router-link></a> -->
       </div>
       <div class="hero-image">
         <img :src="mainImageSrc">
