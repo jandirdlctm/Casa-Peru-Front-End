@@ -4,7 +4,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <header>
-      <a href="/" class="casa-peru-logo"><img src="./assets/logo.png"></a>
+      <a href="/" class="casa-peru-logo"><img src="./assets/new_logo_2.png"></a>
 
       <Slide right :closeOnNavigation="true">
           <a class="nav-link"><router-link to="/">Home</router-link></a>
@@ -27,7 +27,7 @@
       <div class="box-wrapper">
         <div class="wrapper">
           <h3>Contact Info</h3>
-          <p><a href="https://www.google.com/maps/dir/37.093376,-113.5640576/google.+maps+casa+peru/@38.8752355,-114.8586644,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x87528b65a25e6bef:0x11b7cea0a5c8b5ec!2m2!1d-111.9419932!2d40.6975339" target="_blank"><i class="fas fa-map-marker-alt"></i>   1830 W 3500 S West Valley City, UT</a></p>
+          <p><a href="https://www.google.com/maps/dir/37.093376,-113.5640576/google.+maps+casa+peru/@38.8752355,-114.8586644,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x87528b65a25e6bef:0x11b7cea0a5c8b5ec!2m2!1d-111.9419932!2d40.6975339" target="_blank"><i class="fas fa-map-marker-alt"></i>   1830 W 3500 S West Valley City, UT, 84119</a></p>
           <p><a href="tel:8019725807"><i class="fas fa-phone-volume"></i>   (801) 972-5807</a></p>
         </div>
 

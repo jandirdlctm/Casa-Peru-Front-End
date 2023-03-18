@@ -2,8 +2,8 @@
   <section class="home-page" id="home-page">
     <div class="home-section">
       <div class="home-content">
-        <h3>CASA PERÚ IS WAITING FOR YOU TO EXPERIENCE THE BEST OF PERUVIAN CUISINE</h3>
-        <p>Since 2016 Casa Perú Restaurant is one of the most popular peruvian cuisine restaurants in the Salt Lake City area, our goal is to make our customers feel at home and deliver the best experience possible.</p>
+        <h3>CASA PERU IS WAITING FOR YOU TO EXPERIENCE THE BEST OF PERUVIAN CUISINE</h3>
+        <p>Since 2015 Casa Peru Restaurant is one of the most popular peruvian cuisine restaurants in the Salt Lake City area, our goal is to make our customers feel at home and deliver the best experience possible.</p>
         <a href="https://www.clover.com/online-ordering/casa-peru-west-valley-city" target="_blank"><button class="order-btn">ORDER NOW</button></a>
         <a href="/menu"><button class="view-menu-btn">VIEW MENU</button></a>
       </div>
@@ -20,16 +20,16 @@
     <div class="hero-image">
       <img :src="mainImageSrc">
     </div> -->
-    <Contact />
+    <!-- <Contact /> -->
   </section>
 </template>
 
 <script>
-import Contact from './Contact.vue'
+// import Contact from './Contact.vue'
 export default {
   name: 'Home',
   components: {
-    Contact
+    // Contact
   },
   data (){
     return{
@@ -57,7 +57,20 @@ export default {
       },
       {
         image: require('../assets/images/soups/sopa-de-choros.png')
+      },
+      {
+        image: require('../assets/images/meats/tacutacu.png')
+      },
+      {
+        image: require('../assets/images/meats/churrasco.png')
+      },
+      {
+        image: require('../assets/images/seafood/leche-de-tigre-con-calamares.png')
+      },
+      {
+        image: require('../assets/images/seafood/ceviche-de-camarones.png')
       }
+
     ],
     setInterval(function(){
       console.log("function called");

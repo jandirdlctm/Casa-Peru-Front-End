@@ -199,13 +199,13 @@ export default {
           description: 'Whole rotisserie chicken served w/ fries & salad'
         },
         {
-          image: require('../assets/images/chicken/pollo-a-la-brasa.png'),
+          image: require('../assets/images/chicken/medio-pollo-a-la-brasa.png'),
           title: '1/2 Pollo',
           price: '$19.99',
           description: '1/2 rotisserie chicken served w/ fries & salad'
         },
         {
-          image: require('../assets/images/chicken/pollo-a-la-brasa.png'),
+          image: require('../assets/images/chicken/cuarto-de-pollo-a-la-brasa.png'),
           title: '1/4 Pollo',
           price: '$12.00',
           description: '1/4 rotisserie chicken served w/ fries & salad'
@@ -441,6 +441,12 @@ export default {
         description: 'Fried mashed potato stuffed w/ mixture of seasoned steak, eggs, raisins & olives.'
       },
       {
+        image: require('../assets/images/appetizers/salchipapas.png'),
+        title: 'Salchipapas',
+        price: '$9.85',
+        description: 'Fried mashed potato stuffed w/ mixture of seasoned steak, eggs, raisins & olives.'
+      },
+      {
         image: require('../assets/images/appetizers/chicken-nuggets.png'),
         title: 'Chicken Nuggets',
         price: '$10.80',
@@ -537,7 +543,7 @@ export default {
       {
         image: require('../assets/images/house-specialties/arroz-con-mariscos.png'),
         title: 'Arroz Con Mariscos',
-        price: '$21.80',
+        price: '$22.00',
         description: 'Seafood mixed w/ Peruvian rice style.'
       },
       {
@@ -562,7 +568,7 @@ export default {
     desserts: [
       {
         image: require('../assets/images/desserts/rice-pudding.png'),
-        title: 'Arroz Con Leche',
+        title: 'Arroz Con Leche Mixto',
         price: '$10.99',
         description: ''
       },
@@ -612,7 +618,7 @@ export default {
       },
       {
         image: "",
-        title: 'Bisteck Extra, Loma Extra',
+        title: 'Bisteck Extra, Lomo Extra',
         price: '$10.00',
         description: ''
       },
@@ -625,7 +631,7 @@ export default {
       {
         image: "",
         title: 'Toasted Peruvian Corn',
-        price: '$9.00',
+        price: '$2.00',
         description: ''
       },
       {
@@ -693,7 +699,7 @@ export default {
       {
         image: "",
         title: 'Cafe/Tea',
-        price: '$2.50',
+        price: '$3.00',
         description: ''
       },
       {
