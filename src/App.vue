@@ -221,6 +221,10 @@ td {
   background-color: white;
 }
 
+.line-style{
+  background-color: white;
+}
+
 .bm-menu{
   background-color: #282727;
 }
