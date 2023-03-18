@@ -8,10 +8,10 @@
 
       <Slide right :closeOnNavigation="true">
           <a class="nav-link"><router-link to="/">Home</router-link></a>
-          <a class="nav-link"><router-link to="/house-specialties">House Specialties</router-link></a>
+          <!-- <a class="nav-link"><router-link to="/house-specialties">House Specialties</router-link></a> -->
           <a class="nav-link"><router-link to="/menu">Menu</router-link></a>
-          <a class="nav-link"><router-link to="/reviews">Reviews</router-link></a>
-          <a class="nav-link"><router-link to="/contact">Contact</router-link></a>
+          <!-- <a class="nav-link"><router-link to="/reviews">Reviews</router-link></a> -->
+          <!-- <a class="nav-link"><router-link to="/contact">Contact</router-link></a> -->
           <!-- <a class="contact-link" href="#anchor-point" style="color: white;">Contact</a> -->
       </Slide>
 
@@ -31,7 +31,7 @@
           <p><a href="tel:8019725807"><i class="fas fa-phone-volume"></i>   (801) 972-5807</a></p>
         </div>
 
-        <!-- <div class="wrapper">
+        <div class="wrapper">
           <h3>Hours</h3>
           <div class="hrs-of-operation-wrapper">
             <table>
@@ -44,7 +44,7 @@
               <tr><th>Sunday</th><td>11am - 6:30pm</td></tr>
             </table>
           </div>
-        </div> -->
+        </div>
 
         <div class="wrapper">
           <h3>Quick Links</h3>
