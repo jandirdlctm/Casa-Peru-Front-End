@@ -5,20 +5,20 @@
         <h4><span></span> our menu</h4>
       </div>
       <div class="buttons-wrapper">
-        <button @click="chickenClicked" class="menu-btn" type="button" name="button">CHICKEN</button>
-        <button @click="meatsClicked" class="menu-btn" type="button" name="button">MEATS</button>
-        <button @click="seafoodsClicked" class="menu-btn" type="button" name="button">SEAFOOD</button>
-        <button @click="specialtiesClicked" class="menu-btn" type="button" name="button">SPECIALTIES</button>
-        <button @click="soupsClicked" class="menu-btn" type="button" name="button">SOUPS</button>
-        <button @click="vegetariansClicked" class="menu-btn" type="button" name="button">VEGETARIAN</button>
-        <button @click="appetizersClicked" class="menu-btn" type="button" name="button">APPETIZERS</button>        
-        <button @click="sidesClicked" class="menu-btn" type="button" name="button">SIDES</button>
-        <button @click="dessertsClicked" class="menu-btn" type="button" name="button">DESSERTS</button>
-        <button @click="drinksClicked" class="menu-btn" type="button" name="button">DRINKS</button>
+        <button @click="chickenClicked" class="menu-btn" :class="{ 'active': activeButton === 'chicken' }" type="button" name="button">CHICKEN</button>
+        <button @click="meatsClicked" class="menu-btn" :class="{ 'active': activeButton === 'meats' }" type="button" name="button">MEATS</button>
+        <button @click="seafoodsClicked" class="menu-btn" :class="{ 'active': activeButton === 'seafoods' }" type="button" name="button">SEAFOOD</button>
+        <button @click="specialtiesClicked" class="menu-btn" :class="{ 'active': activeButton === 'specialties' }" type="button" name="button">SPECIALTIES</button>
+        <button @click="soupsClicked" class="menu-btn" :class="{ 'active': activeButton === 'soups' }" type="button"  name="button">SOUPS</button>
+        <button @click="vegetariansClicked" class="menu-btn" :class="{ 'active': activeButton === 'vegeterians' }" type="button" name="button">VEGETARIAN</button>
+        <button @click="appetizersClicked" class="menu-btn" :class="{ 'active': activeButton === 'appetizers' }" type="button" name="button">APPETIZERS</button>        
+        <button @click="sidesClicked" class="menu-btn" :class="{ 'active': activeButton === 'sides' }" type="button" name="button">SIDES</button>
+        <button @click="dessertsClicked" class="menu-btn" :class="{ 'active': activeButton === 'desserts' }" type="button" name="button">DESSERTS</button>
+        <button @click="drinksClicked" class="menu-btn" :class="{ 'active': activeButton === 'drinks' }" type="button" name="button">DRINKS</button>
       </div>
 
         <div v-if="showChicken" class="wrapper-menu">
-          <div  v-for="food in chicken" v-bind:key="food"  class="menu-item">
+          <div  v-for="food in chicken" :key="food.title"  class="menu-item">
             <img :src="food.image">
             <div class="body-menu">
               <h4>{{food.title}} <span> {{food.price}}</span></h4>
@@ -28,7 +28,7 @@
         </div>
 
         <div v-if="showMeats" class="wrapper-menu">
-          <div  v-for="food in meats" v-bind:key="food"  class="menu-item">
+          <div  v-for="food in meats" :key="food.title"  class="menu-item">
             <img :src="food.image">
             <div class="body-menu">
               <h4>{{food.title}} <span> {{food.price}}</span></h4>
@@ -38,7 +38,7 @@
         </div>
 
         <div v-if="showSeafoods" class="wrapper-menu">
-          <div  v-for="food in seafoods" v-bind:key="food"  class="menu-item">
+          <div  v-for="food in seafoods" v-bind:key="food.title"  class="menu-item">
             <img :src="food.image">
             <div class="body-menu">
               <h4>{{food.title}} <span> {{food.price}}</span></h4>
@@ -48,7 +48,7 @@
         </div>
 
         <div v-if="showSpecialties" class="wrapper-menu">
-          <div  v-for="food in house_specialties" v-bind:key="food"  class="menu-item">
+          <div  v-for="food in house_specialties" v-bind:key="food.title"  class="menu-item">
             <img :src="food.image">
             <div class="body-menu">
               <h4>{{food.title}} <span> {{food.price}}</span></h4>
@@ -58,7 +58,7 @@
         </div>
 
         <div v-if="showSoups" class="wrapper-menu">
-          <div  v-for="food in soups" v-bind:key="food"  class="menu-item">
+          <div  v-for="food in soups" v-bind:key="food.title"  class="menu-item">
             <img :src="food.image">
             <div class="body-menu">
               <h4>{{food.title}} <span> {{food.price}}</span></h4>
@@ -68,7 +68,7 @@
         </div>
 
         <div v-if="showVegetarians" class="wrapper-menu">
-          <div  v-for="food in vegetarian" v-bind:key="food"  class="menu-item">
+          <div  v-for="food in vegetarian" v-bind:key="food.title"  class="menu-item">
             <img :src="food.image">
             <div class="body-menu">
               <h4>{{food.title}} <span> {{food.price}}</span></h4>
@@ -78,7 +78,7 @@
         </div>
 
         <div v-if="showAppetizers" class="wrapper-menu">
-          <div  v-for="food in appetizers" v-bind:key="food"  class="menu-item">
+          <div  v-for="food in appetizers" v-bind:key="food.title"  class="menu-item">
             <img :src="food.image">
             <div class="body-menu">
               <h4>{{food.title}} <span> {{food.price}}</span></h4>
@@ -88,7 +88,7 @@
         </div>
 
         <div v-if="showSides" class="wrapper-menu">
-          <div  v-for="food in side_orders" v-bind:key="food"  class="menu-item">
+          <div  v-for="food in side_orders" v-bind:key="food.title"  class="menu-item">
             <img :src="food.image">
             <div class="body-menu">
               <h4>{{food.title}} <span> {{food.price}}</span></h4>
@@ -98,7 +98,7 @@
         </div>
 
         <div v-if="showDesserts" class="wrapper-menu">
-          <div  v-for="food in desserts" v-bind:key="food"  class="menu-item">
+          <div  v-for="food in desserts" v-bind:key="food.title"  class="menu-item">
             <img :src="food.image">
             <div class="body-menu">
               <h4>{{food.title}} <span> {{food.price}}</span></h4>
@@ -108,7 +108,7 @@
         </div>
         
         <div v-if="showDrinks" class="wrapper-menu">
-          <div  v-for="food in drinks" v-bind:key="food"  class="menu-item">
+          <div  v-for="food in drinks" v-bind:key="food.title"  class="menu-item">
             <img :src="food.image">
             <div class="body-menu">
               <h4>{{food.title}} <span> {{food.price}}</span></h4>
@@ -127,6 +127,7 @@ export default {
   name: 'Menu',
   data(){
     return{
+      activeButton: 'chicken',
       showChicken: true,
       showMeats: false,
       showSeafoods : false,
@@ -725,6 +726,7 @@ export default {
   },
   methods:{
     chickenClicked: function(){
+      this.activeButton = "chicken";
       this.showChicken = true;
       this.showMeats = false;
       this.showSeafoods = false;
@@ -737,6 +739,7 @@ export default {
       this.showDrinks = false;
     },
     meatsClicked: function(){
+      this.activeButton = "meats";
       this.showChicken = false;
       this.showMeats = true;
       this.showSeafoods = false;
@@ -749,6 +752,7 @@ export default {
       this.showDrinks = false;
     },
     seafoodsClicked: function(){
+      this.activeButton = "seafoods";
       this.showChicken = false;
       this.showMeats = false;
       this.showSeafoods = true;
@@ -761,6 +765,7 @@ export default {
       this.showDrinks = false;
     },
     appetizersClicked: function(){
+      this.activeButton = "appetizers";
       this.showChicken = false;
       this.showMeats = false;
       this.showSeafoods = false;
@@ -773,6 +778,7 @@ export default {
       this.showDrinks = false;
     },
     soupsClicked: function(){
+      this.activeButton = "soups";
       this.showChicken = false;
       this.showMeats = false;
       this.showSeafoods = false;
@@ -785,6 +791,7 @@ export default {
       this.showDrinks = false;
     },
     specialtiesClicked: function(){
+      this.activeButton = "specialties";
       this.showChicken = false;
       this.showMeats = false;
       this.showSeafoods = false;
@@ -797,6 +804,7 @@ export default {
       this.showDrinks = false;
     },
     vegetariansClicked: function(){
+      this.activeButton = "vegeterians";
       this.showChicken = false;
       this.showMeats = false;
       this.showSeafoods = false;
@@ -809,6 +817,7 @@ export default {
       this.showDrinks = false;
     },
     sidesClicked: function(){
+      this.activeButton = "sides";
       this.showChicken = false;
       this.showMeats = false;
       this.showSeafoods = false;
@@ -821,6 +830,7 @@ export default {
       this.showDrinks = false;
     },
     dessertsClicked: function(){
+      this.activeButton = "desserts";
       this.showChicken = false;
       this.showMeats = false;
       this.showSeafoods = false;
@@ -833,6 +843,7 @@ export default {
       this.showDrinks = false;
     },
     drinksClicked: function(){
+      this.activeButton = "drinks";
       this.showChicken = false;
       this.showMeats = false;
       this.showSeafoods = false;
@@ -849,6 +860,12 @@ export default {
 </script>
 
 <style lang="css" scoped>
+  .active {
+  background-color: red !important; /* Change this to the desired background color */
+  /* You can adjust other styles as needed for the active button */
+  color: white !important; /* Text color for active button */
+  /* Add any other styles for the active button */
+  } 
 
   section{
     min-height: 100vh;
