@@ -75,6 +75,7 @@ export default {
       }
 
     ],
+    this.mainImageSrc = this.images[1].image,
     setInterval(function(){
       console.log("function called");
       self.mainImageSrc = self.images[Math.floor(Math.random()*self.images.length)].image;
