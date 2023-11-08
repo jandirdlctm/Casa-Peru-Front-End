@@ -40,8 +40,8 @@
               <tr><th>Wednesday</th><td>11am - 8pm</td></tr>
               <tr><th>Thursday</th><td>11am - 8pm</td></tr>
               <tr><th>Friday</th><td>11am - 9pm</td></tr>
-              <tr><th>Saturday</th><td>11am - 9:30pm</td></tr>
-              <tr><th>Sunday</th><td>11am - 6:30pm</td></tr>
+              <tr><th>Saturday</th><td>11am - 9pm</td></tr>
+              <tr><th>Sunday</th><td>11am - 6pm</td></tr>
             </table>
           </div>
         </div>
@@ -49,9 +49,9 @@
         <div class="wrapper">
           <h3>Quick Links</h3>
           <a href="/">Home</a>
-          <a href="/house-specialties">House Specialties</a>
+          <!-- <a href="/house-specialties">House Specialties</a> -->
           <a href="/menu">Menu</a>
-          <a href="/reviews">Reviews</a>
+          <!-- <a href="/reviews">Reviews</a> -->
         </div>
 
         <div class="wrapper">
